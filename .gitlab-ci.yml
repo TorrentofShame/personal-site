@@ -6,6 +6,7 @@ cache:
 
 before_script:
   - rm -rf build
+    - CI=false npm install
   - CI=false yarn install --production
 
 pages:
