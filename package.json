@@ -2,6 +2,7 @@
   "name": "personal-site",
   "version": "1.0.0",
   "private": true,
+  "homepage": "/personal-site",
   "dependencies": {
     "bootstrap": "^4.5.3",
     "react": "^17.0.1",
