@@ -6,7 +6,7 @@ cache:
 
 before_script:
   - rm -rf build
-  - CI=false yarn install
+  - CI=false yarn install --production
 
 pages:
   stage: deploy
