@@ -8,6 +8,7 @@ before_script:
   - rm -rf build
   - CI=false npm cache clean --force
   - CI=false npm install --production
+  - CI=false npm fund
 pages:
   stage: deploy
   script:
