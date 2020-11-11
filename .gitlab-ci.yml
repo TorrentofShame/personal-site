@@ -1,4 +1,4 @@
-image: node:10.16.3
+image: node:12.18.4
 
 cache:
   paths:
@@ -6,13 +6,12 @@ cache:
 
 before_script:
   - rm -rf build
-  - CI=false npm install
   - CI=false yarn install
 
 pages:
   stage: deploy
   script:
-    - CI=false npm run build
+    - CI=false yarn build
     - rm -rf public
     - cp build/index.html
     - mv build public
