@@ -6,9 +6,8 @@ cache:
 
 before_script:
   - rm -rf build
+  - CI=false yarn cache clean --force
   - CI=false yarn install
-  - CI=false yarn add react-bootstrap bootstrap
-
 pages:
   stage: deploy
   script:
