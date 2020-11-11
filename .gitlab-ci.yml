@@ -8,7 +8,7 @@ before_script:
   - rm -rf build
   - CI=false npm install
   - CI=false yarn install
-  - CI=false yarn add react-bootstrap
+  - CI=false yarn add react-bootstrap/NavBar
 
 pages:
   stage: deploy
