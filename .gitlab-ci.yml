@@ -12,7 +12,7 @@ pages:
   script:
     - CI=false yarn build
     - rm -rf public
-    - cp build/index.html
+    - cp build/index.html build/404.html
     - mv build public
   artifacts:
     paths:
