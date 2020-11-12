@@ -54,6 +54,7 @@ function CV(props) {
 				</Col>
 				<Col bsPrefix="col-6">
 					<span className="period" style={{position: "static"}}>06/2020 - Current</span>
+					<br />
 					<small>Currently enrolled as a Computer Science major.</small>
 				</Col>
 			</Row>

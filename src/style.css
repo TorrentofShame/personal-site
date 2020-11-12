@@ -89,6 +89,12 @@
     fill: #FFDD00;
 }
 
+@media (min-width:768px) {
+	.education small {
+		margin-left: -3em;
+	}
+}
+
 /*Certifications*/
 .cert-card {
 	border-color: transparent!important;
