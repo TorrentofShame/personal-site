@@ -95,6 +95,15 @@
 	text-align: center!important;
 }
 
+@media (max-width:575px) {
+	.card-deck {
+		display: flex;
+		flex-flow: row nowrap;
+		margin-right: -15px;
+		margin-left: -15px;
+	}
+}
+
 /*Social-Icons*/
 .social-icons {
   color: #313437;
