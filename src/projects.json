@@ -15,7 +15,8 @@
 		"badges": ["js", "react", "web"],
 		"creators": [],
 		"links": [
-			{"name": "View", "url": "https://simon.weizman.us"}
+			{"name": "View", "url": "https://simon.weizman.us"},
+      {"name": "GitLab", "url": "https://gitlab.com/torrentofshame/personal-site"}
 		],
 		"description": "My personal website has been created by me; however, it is not-responsive and it is sorely out of date so I am currently deciding between 4 designs for the website, 3 of them based on Bootstrap 4."
 	},
