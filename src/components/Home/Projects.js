@@ -9,19 +9,22 @@ import projBadge from "./Badge.jsx";
 
 function build_projects(project) {
 	
-	let badgelist = project.badges.map(projBadge);
+	const badgelist = project.badges.map(projBadge);
 	const linkbtns = project.links.map(l => <Button size="sm" className="ml-3" variant="primary" href={l.url}>{l.name}</Button>);
 	
 	if (project.wakatimestub) {
     const link = `https://wakatime.com/badge/gitlab/torrentofshame/${project.wakatimestub}`;
-    badgelist.append(<a href={link}><Image src={`${link}.svg`} /></a>);
-  }
+    const wakatimebadge = <a href={link}><Image src={link+".svg"} /></a>
+  	}
 	
 	return (
 		<Row className="item">
 			<Col md={6}>
 				<h3>{project.name}</h3>
 				{badgelist }
+				{project.wakatimestub &&
+					{wakatimebadge }
+				}
 			</Col>
 			<Col md={6}>
 				<span className="period">{project.period}</span>
