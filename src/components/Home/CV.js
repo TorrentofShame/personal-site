@@ -11,7 +11,7 @@ function build_certs(data) {
 			<Card.Body>
 				{data.body}
 				{data.isacclaim &&
-					<script crossorigin type="text/javascript" async src="https://cdn.youracclaim.com/assets/utilities/embed.js" />
+					<script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js" />
 				}
 			</Card.Body>
 		</Card>
