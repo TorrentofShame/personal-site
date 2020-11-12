@@ -103,6 +103,7 @@
 
 @media (max-width:575px) {
 	.card-deck {
+		overflow-x: hidden;
 		display: flex;
 		flex-flow: row nowrap;
 		margin-right: -15px;
