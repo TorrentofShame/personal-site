@@ -13,8 +13,13 @@ const projBadges = {
 };
 
 const projBadge = props => {
-	let badge_info = projBadges[props.idn];
-	return <Badge variant={badge_info.variant}>{badge_info.name}</Badge>
+	if props.idn != "wakatime" {
+	  let badge_info = projBadges[props.idn];
+	  return <Badge variant={badge_info.variant}>{badge_info.name}</Badge>
+	else {
+    let link = `https://wakatime.com/badge/gitlab/torrentofshame/${props.projstub}`;
+    return <a href={link}><Image src={`${link}.svg`} /></a>
+  }
 }
 
 export { projBadge };

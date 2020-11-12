@@ -13,6 +13,7 @@
 		"name": "Personal Portfolio Website",
 		"period": "Nov 2018 - Present",
 		"badges": ["js", "react", "web"],
+		"wakatimestub": "personal-site",
 		"creators": [],
 		"links": [
 			{"name": "View", "url": "https://simon.weizman.us"},
