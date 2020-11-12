@@ -12,10 +12,9 @@ function build_projects(project) {
 	const badgelist = project.badges.map(projBadge);
 	const linkbtns = project.links.map(l => <Button size="sm" className="ml-3" variant="primary" href={l.url}>{l.name}</Button>);
 	
-	let wakatimebadge;
 	if (project.wakatimestub) {
     const link = `https://wakatime.com/badge/gitlab/torrentofshame/${project.wakatimestub}`;
-    wakatimebadge = <a href={link}><Image src={link+".svg"} /></a>
+    badgelist.push(<a href={link}><Image src={link+".svg"} /></a>);
   	}
 	
 	return (
@@ -23,9 +22,6 @@ function build_projects(project) {
 			<Col md={6}>
 				<h3>{project.name}</h3>
 				{badgelist }
-				{wakatimebadge &&
-					{wakatimebadge }
-				}
 			</Col>
 			<Col md={6}>
 				<span className="period">{project.period}</span>
