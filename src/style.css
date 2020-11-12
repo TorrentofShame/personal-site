@@ -90,10 +90,9 @@
 }
 
 /*Certifications*/
-.cert-deck .card {
-	max-width: fit-content;
-	max-height: fit-content;
-	border-color: transparent;
+.cert-card {
+	border-color: transparent!important;
+	text-align: center!important;
 }
 
 /*Social-Icons*/

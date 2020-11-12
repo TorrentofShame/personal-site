@@ -5,14 +5,12 @@ import Col from "react-bootstrap/Col";
 import CardDeck from "react-bootstrap/CardDeck";
 import Card from "react-bootstrap/Card";
 
+
 function build_certs(data) {
 	return (
-		<Card>
+		<Card className="cert-card">
 			<Card.Body>
 				{data.body}
-				{data.isacclaim &&
-					<script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js" />
-				}
 			</Card.Body>
 		</Card>
 	)
