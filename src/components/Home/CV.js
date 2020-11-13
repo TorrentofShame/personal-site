@@ -50,7 +50,7 @@ function CV(props) {
 			<Row className="item">
 				<Col md={6}>
 					<h3>Computer Science</h3>
-					<h4 className="organization">University of Central Florida</h4>
+					<h4 className="organization" style={{backgroundColor: "#186329"}}>University of Central Florida</h4>
 				</Col>
 				<Col bsPrefix="col-6">
 					<span className="period" style={{position: "static"}}>06/2020 - Current</span>

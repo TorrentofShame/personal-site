@@ -1,15 +1,15 @@
 import React from "react";
 
 const projBadges = {
-	"python": {"name": "Python", "bgcolor": "#007bff"},
-	"lua": {"name": "Lua", "bgcolor": "#007bff"},
-	"js": {"name": "JavaScript", "bgcolor": "#007bff"},
-	"react": {"name": "React", "bgcolor": "#007bff"},
-	"web": {"name": "Web Design", "bgcolor": "#6c757d"},
-	"cad": {"name": "CAD", "bgcolor": "#6c757d"},
-	"ml": {"name": "Machine Learning", "bgcolor": "#6c757d"},
-	"linux": {"name": "Linux", "bgcolor": "#6c757d"},
-	"virtualization": {"name": "Virtualization", "bgcolor": "#6c757d"}
+	"python": {"name": "Python", "bgcolor": "#0049DB"},
+	"lua": {"name": "Lua", "bgcolor": "#0049DB"},
+	"js": {"name": "JavaScript", "bgcolor": "#0049DB"},
+	"react": {"name": "React", "bgcolor": "#0049DB"},
+	"web": {"name": "Web Design", "bgcolor": "#535A5F"},
+	"cad": {"name": "CAD", "bgcolor": "#535A5F"},
+	"ml": {"name": "Machine Learning", "bgcolor": "#535A5F"},
+	"linux": {"name": "Linux", "bgcolor": "#535A5F"},
+	"virtualization": {"name": "Virtualization", "bgcolor": "#535A5F"}
 };
 
 function projBadge(id) {

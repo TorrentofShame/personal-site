@@ -19,6 +19,15 @@
   opacity: 0.75;
 }
 
+/* badge stuff */
+.portfolio-block.cv .group .organization {
+  background-color: #0049DB;
+}
+
+.portfolio-block.cv .group .period {
+  color: #535A5F;
+}
+
 /* portfolio */
 .bg-header {
 	background-image: url("https://cdn.weizman.us/portfolio-assets/images/banner.jpg");
@@ -109,6 +118,17 @@
 		margin-right: -15px;
 		margin-left: -15px;
 	}
+}
+
+/*Project Buttons*/
+.btn-primary {
+  background-color: #0049DB;
+  border-color: #0049DB;
+}
+
+.btn-primary.focus, .btn-primary:focus, .btn-primary:hover {
+  background-color: #0055FF;
+  border-color: #0055FF;
 }
 
 /*Social-Icons*/
