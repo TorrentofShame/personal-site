@@ -52,7 +52,7 @@ export class App extends React.Component {
         <Container className="p-0" fluid={true}>
 
           <Navbar className="navbar-dark gradient" expand="lg">
-            <Navbar.Brand href="/#"><Image alt src={process.env.PUBLIC_URL+"/favicon.webp"} fluid />Simon Weizman</Navbar.Brand>
+            <Navbar.Brand href="/#"><Image alt="" src={process.env.PUBLIC_URL+"/favicon.webp"} fluid />Simon Weizman</Navbar.Brand>
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
 
             <Navbar.Collapse id="navbar-toggle">
