@@ -7,10 +7,10 @@ import Image from "react-bootstrap/Image";
 
 import Footer from "./components/Footer";
 import Home from "./Home";
-import Project from "./Project";
 import withMeta from "./components/withMeta";
 
 const projects = require("./projects.json");
+const cdn_sitelogo = "https://cdn.weizman.us/portfolio-assets/images/sitelogo.webp";
 
 export class App extends React.Component {
 
@@ -52,7 +52,7 @@ export class App extends React.Component {
         <Container className="p-0" fluid={true}>
 
           <Navbar className="navbar-dark gradient" expand="lg">
-            <Navbar.Brand href="/#"><Image alt="" src={process.env.PUBLIC_URL+"/favicon.webp"} fluid />Simon Weizman</Navbar.Brand>
+            <Navbar.Brand href="/#"><Image alt="" src={cdn_sitelogo} fluid />Simon Weizman</Navbar.Brand>
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
 
             <Navbar.Collapse id="navbar-toggle">
