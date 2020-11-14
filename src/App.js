@@ -39,13 +39,6 @@ export class App extends React.Component {
     }
   }
   
-  get_project( props ) {
-	let params = props.match.params;
-	if (params.projname in projects) {
-		return <Project meta={withMeta({title: params.projname})} />
-	}
-  }
-
   render() {
     return (
       <Router>
@@ -67,8 +60,6 @@ export class App extends React.Component {
 
           <Route path="/" exact render={() => <Home meta={withMeta(this.state.home)} projects={projects} />} />
 		  
-		  {/*<Route path="/projects/:projname" render={this.get_project} />*/}
-
           <Footer />
 
         </Container>
