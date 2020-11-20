@@ -6,8 +6,7 @@ const def = {
 	"keywords": "Simon, Weizman, Developer, Programmer, Full Stack, AutoCAD, Web Developer",
 	"subject": "Simon Weizman",
 	"author": "Simon Weizman, contact@simon.weizman.us",
-	"description": "Simon Weizman",
-	"ogimage": "%PUBLIC_URL%/images/favicon.png"
+	"description": "Simon Weizman"
 };
 
 function withMeta(d) {
@@ -18,7 +17,6 @@ function withMeta(d) {
 			<meta name="subject" content={d.subject ? d.subject : def.subject} />
 			<meta name="author" content={d.author ? d.author : def.author} />
 			<meta name="description" content={d.description ? d.description : def.description} />
-			<meta name="og:image" content={d.ogimage ? d.ogimage : def.ogimage} />
 			<meta name="og:title" content={d.title ? d.title : def.title} />
         </Helmet>
     );
