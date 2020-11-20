@@ -14,7 +14,7 @@ function build_projects(project) {
 	
 	if (project.wakatimestub) {
     const link = `https://wakatime.com/badge/gitlab/torrentofshame/${project.wakatimestub}`;
-    badgelist.push(<a href={link}><Image alt="Wakatime" src={link+".svg"} /></a>);
+    badgelist.push(<a href={link}><Image alt="Wakatime" src={link+".svg"} width="118" height="20" /></a>);
   	}
 	
 	return (

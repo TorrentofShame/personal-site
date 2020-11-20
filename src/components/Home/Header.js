@@ -10,7 +10,7 @@ function Header() {
     <header className="bg-header text-white text-center portfolio-block block-intro">
 		<Container>
 			<Row>
-				<Image alt="" className="avatar" src="https://cdn.weizman.us/portfolio-assets/images/profile.webp" roundedCircle fluid />
+				<Image alt="" className="avatar" src="https://cdn.weizman.us/portfolio-assets/images/profile.webp" roundedCircle fluid width="450" height="450" />
 			</Row>
 			<h3 className="text-center">Simon Weizman</h3>
 			<Row className="about-me">

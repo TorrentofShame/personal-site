@@ -45,7 +45,7 @@ export class App extends React.Component {
         <Container className="p-0" fluid={true}>
 
           <Navbar className="navbar-dark gradient" expand="lg">
-            <Navbar.Brand href="/#"><Image alt="" src={cdn_sitelogo} fluid />Simon Weizman</Navbar.Brand>
+            <Navbar.Brand href="/#"><Image alt="" src={cdn_sitelogo} fluid width="150" height="126" />Simon Weizman</Navbar.Brand>
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
 
             <Navbar.Collapse id="navbar-toggle">
