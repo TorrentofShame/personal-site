@@ -7,18 +7,18 @@ import Image from "react-bootstrap/Image";
 
 import projBadge from "./Badge.jsx";
 
-function build_projects(project) {
+function build_projects(project, key) {
 	
 	const badgelist = project.badges.map(projBadge);
-	const linkbtns = project.links.map(l => <Button size="sm" className="ml-3" variant="primary" href={l.url}>{l.name}</Button>);
+	const linkbtns = project.links.map((l,k) => <Button key={k} size="sm" className="ml-3" variant="primary" href={l.url}>{l.name}</Button>);
 	
 	if (project.wakatimestub) {
     const link = `https://wakatime.com/badge/gitlab/torrentofshame/${project.wakatimestub}`;
-    badgelist.push(<a href={link}><Image alt="Wakatime" src={link+".svg"} width="118" height="20" /></a>);
+    badgelist.push(<a key="wakatime" href={link}><Image alt="Wakatime" src={link+".svg"} width="118" height="20" /></a>);
   	}
 	
 	return (
-		<Row className="item">
+		<Row key={key} className="item">
 			<Col md={6}>
 				<h3>{project.name}</h3>
 				{badgelist }

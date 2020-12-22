@@ -6,9 +6,9 @@ import CardDeck from "react-bootstrap/CardDeck";
 import Card from "react-bootstrap/Card";
 
 
-function build_certs(data) {
+function build_certs(data, key) {
 	return (
-		<Card className="cert-card">
+		<Card key={key} className="cert-card">
 			<Card.Body>
 				{data.body}
 			</Card.Body>
@@ -16,9 +16,9 @@ function build_certs(data) {
 	)
 }
 
-function exp_builder(data) {
+function exp_builder(data, key) {
 	return(
-		<Row className="item">
+		<Row key={key} className="item">
 				<Col md={6}>
 					<h3>{data.title}</h3>
 					<h4 className="organization">{data.org}</h4>
@@ -27,7 +27,7 @@ function exp_builder(data) {
 					<span className="period">{data.period}</span>
 				</Col>
 				<ul>
-					{data.desclist.map(d => <li>{d}</li>) }
+					{data.desclist.map((d, k) => <li key={k}>{d}</li>) }
 				</ul>
 			</Row>
 	)

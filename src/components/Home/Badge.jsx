@@ -14,8 +14,8 @@ const projBadges = {
 
 function projBadge(id) {
 	const badge_info = projBadges[id];
-	const badgestyle = {"background-color": badge_info.bgcolor};
-	return <h4 className="organization" style={badgestyle}>{badge_info.name}</h4>
+	const badgestyle = {backgroundColor: badge_info.bgcolor};
+	return <h4 key={id} className="organization" style={badgestyle}>{badge_info.name}</h4>
 }
 
 export default projBadge;
