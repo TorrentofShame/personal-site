@@ -16,7 +16,7 @@ function Home(props) {
   return (
 	<main>
 		{props.meta}
-		<Header />
+		<Header isWarm={props.isWarm} />
 		<CV experiences={require("./experiences.json")} certs={certs} />
 		<Projects projects={props.projects} />
 	</main>

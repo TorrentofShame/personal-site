@@ -16,8 +16,13 @@ export class App extends React.Component {
 
   constructor(props) {
     super(props);
+
+    let today = new Date(),
+      month = today.getMonth() + 1;
+
     this.state = {
       title: "Simon Weizman",
+      isWarm: ![12, 1, 2].includes(month),
       headerLinks: [
         { 
 		  title: "Home - Simon Weizman",
@@ -58,7 +63,7 @@ export class App extends React.Component {
             </Navbar.Collapse>
           </Navbar>
 
-          <Route path="/" exact render={() => <Home meta={withMeta(this.state.home)} projects={projects} />} />
+          <Route path="/" exact render={() => <Home isWarm={this.state.isWarm} meta={withMeta(this.state.home)} projects={projects} />} />
 		  
           <Footer />
 

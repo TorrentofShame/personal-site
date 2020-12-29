@@ -4,10 +4,15 @@ import Row from "react-bootstrap/Row";
 import Image from "react-bootstrap/Image";
 
 
-function Header() {
+function Header(props) {
   
   return (
-    <header className="bg-header text-white text-center portfolio-block block-intro">
+    <header
+      className="bg-header text-white text-center portfolio-block block-intro"
+      style={{
+        backgroundImage: `url(https://cdn.weizman.us/portfolio-assets/images/banner-${props.isWarm ? "warm" : "cold"}.webp)`
+      }}
+    >
 		<Container>
 			<Row>
 				<Image alt="" className="avatar" src="https://cdn.weizman.us/portfolio-assets/images/profile.webp" roundedCircle fluid width="450" height="450" />
