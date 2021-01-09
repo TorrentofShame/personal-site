@@ -1,5 +1,8 @@
 .navbar-brand img {width: 50px;}
 
+a {text-decoration: none; color: initial; cursor: pointer;}
+a:hover {color: initial; text-decoration: none;}
+
 .gradient {
   background: linear-gradient(120deg,#313437,#282d32);
   color: #fff;
