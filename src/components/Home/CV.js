@@ -3,9 +3,6 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
-//import CardDeck from "react-bootstrap/CardDeck";
-//import Card from "react-bootstrap/Card";
-
 
 function build_certs(data, key) {
   let period = `Issued ${data.issueDate} — ` + (data.expireDate ? `Expires ${data.expireDate}` : "No Expiration Date");
@@ -13,7 +10,7 @@ function build_certs(data, key) {
     <Row key={key} className="item">
       <Col md={1}>
         <Image
-          src={`/assets/certifications/${data.logo}.png`}
+          src={`https://cdn.weizman.us/portfolio-assets/images/certifications/${data.logo}.png`}
           style={{
             height: "50px",
             width: "50px"
