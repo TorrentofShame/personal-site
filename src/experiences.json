@@ -1,28 +1,14 @@
 [
 	{
-		"title": "CAD Designer for School's First Robotics Team",
-		"org": "South Broward High School",
-		"period": "2017 - 2020",
-		"desclist": [
-			"Have a working knowledge of Autodesk Inventor and AutoCAD and assist other students in the usage of those applications.",
-			"Design and implement components into the robot design.",
-			"3d print and laser cut robot components and assist other students in the usage of those technologies.",
-			"Communicate and collaborate with the \"hardware\" part of the team to design, test, and plan new iterations in the robot design.",
-			"Create renderings and diagrams of the final robot for the team's engineering notebook.",
-			"Received 1st and 2nd for multiple competitions in Florida."
-		]
-	},
-	{
-		"title": "Lua Developer",
+		"title": "Volunteer Lua Developer",
 		"org": "Innovative Gamers",
 		"period": "Mar 2019 - Feb 2020",
 		"desclist": [
-			"Utilized gLua (Garry's Mod's adaptation of the open-source language Lua) to develop client-side and server-side scripts for a Garry's Mod server.",
-			"Utilized SQL databases to store and manage player data.",
-			"Updated existing code for better performance and compatibility between different addons.",
-			"Updated existing code and developed new code to add new features to the server.",
-			"Updated in-game content to create a better experience for players.",
-			"Communicate with the server staff and players to ensure the enjoyment of the players on the server and to develop new features, depending on what is wanted and/or needed."
+      "Developed a player management system utilizing an SQL database which enhanced the player experience and assisted in managing the player hierarchy.",
+      "Designed custom UI that integrated existing features to assist players and staff in managing characters and the server.",
+      "Cooperated with staff and players to increase player retention during down-time by 50%.",
+      "Documented the steps necessary to configure the different features on the server.",
+      "Maintained and managed the serverÎé}s code and database."
 		]
 	},
 	{
