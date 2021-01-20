@@ -3,14 +3,14 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 
-import "./bootstrap.min.css";
-import "./style.css";
+//import "./bootstrap.min.css";
+import "./style.scss";
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById("root")
+  document.body
 );
 
 serviceWorkerRegistration.register();
