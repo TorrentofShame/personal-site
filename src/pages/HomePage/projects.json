@@ -1,0 +1,75 @@
+[
+  {
+    "name": "Verum Interactive Starmap",
+    "period": "Dec 2020 - Jan 2021",
+    "badges": ["js", "web"],
+    "wakatimestub": "verum-interactive-starmap",
+    "creators": [],
+    "links": [
+      {"name": "View", "url": "https://verumstarmap.torrentofshame.com"},
+      {"name": "GitLab", "url": "https://gitlab.com/torrentofshame/verum-interactive-starmap"}
+    ],
+    "description": "An interactive starmap for Arcadum's world of Verum. Art is by Yowto with permission."
+  },
+	{
+		"name": "Web Email Client",
+		"period": "Jul 2020 - Present",
+		"badges": ["js", "web"],
+		"creators": [],
+		"links": [
+			{"name": "GitLab", "url": "https://gitlab.com/torrentofshame/web-email-client"}
+		],
+		"description": "Basically a Gmail/Outlook Clone architected with NodeJS and Express, etc. to help me learn more about Full-Stack Development and best practices for production."
+	},
+	{
+		"name": "Personal Portfolio Website",
+		"period": "Nov 2018 - Present",
+		"badges": ["js", "react", "web"],
+		"wakatimestub": "personal-site",
+		"creators": [],
+		"links": [
+			{"name": "View", "url": "https://simon.weizman.us"},
+      {"name": "GitLab", "url": "https://gitlab.com/torrentofshame/personal-site"}
+		],
+		"description": "My personal website has been created by me; however, it is not-responsive and it is sorely out of date so I am currently deciding between 4 designs for the website, 3 of them based on Bootstrap 4."
+	},
+	{
+		"name": "Why don't people format their numbers browser extension",
+		"period": "Sep 2020",
+		"badges": ["js", "web"],
+		"creators": [],
+		"links": [
+			{"name": "Chrome Web Store", "url": "https://chrome.google.com/webstore/detail/why-dont-people-format-th/podmdilnbokjlfjelmomaikopimbfghn/"},
+			{"name": "GitLab", "url": "https://gitlab.com/torrentofshame/why-dont-people-format-their-numbers"}
+		],
+		"description": "I created a Google Chrome browser extension using JavaScript to help me read large, especially unformatted numbers."
+	},
+	{
+		"name": "Personal Homelab Server",
+		"period": "Mar 2018 - Jul 2020",
+		"badges": ["linux", "virtualization"],
+		"creators": [],
+		"links": [],
+		"description": "I owned, maintained, and administered an old Dell Poweredge R710 Server that I purchased from E-bay. I deployed the server in my home running Proxmox VE as it was a free and flexible environment which I utilized to learn more about server administration/management."
+	},
+	{
+		"name": "First ML - Ai plays Snake",
+		"period": "Mar 2020 - Apr 2020",
+		"badges": ["python", "ml"],
+		"creators": [],
+		"links": [
+			{"name": "GitLab", "url": "https://gitlab.com/torrentofshame/snakeai"}
+		],
+		"description": "My first Machine Learning Project, a failed attempt to make the computer play snake."
+	},
+	{
+		"name": "PyChessbot",
+		"period": "Apr 2019 - Oct 2019",
+		"badges": ["python"],
+		"creators": [],
+		"links": [
+			{"name": "GitLab", "url": "https://gitlab.com/torrentofshame/PyChessbot"}
+		],
+		"description": "A program to play chess architected with the PyGame framework and written in Python, originally built for the APCSP 2019 Create Task"
+	}
+]

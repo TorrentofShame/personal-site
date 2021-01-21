@@ -1,6 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
 @import "theme/variables";
 @import "~bootstrap/scss/bootstrap";
 @import "theme/theme";
+
+html body {
+  font-family: 'Lato', sans-serif;
+}
 
 .navbar-brand img {width: 50px;}
 
@@ -47,7 +53,7 @@ a:hover {color: initial; text-decoration: none;}
 .avatar {
 	width: 150px;
 	height: 150px;
-	margin: auto;
+	margin: auto auto 30px;
 }
 
 .about-me {display: block!important}

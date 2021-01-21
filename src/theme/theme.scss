@@ -2,14 +2,28 @@
 // Configuration
 //@import "variables";
 
-@font-face {
-  font-family: "Lato";
-}
-
 // Move this shit to smaller files
 
 html {
+  scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
+}
+
+.navbar {
+  @media (min-width: 576px) {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+}
+
+img {
+  pointer-events: none;
+  -moz-user-select: none;
+  user-drag: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .gradient {

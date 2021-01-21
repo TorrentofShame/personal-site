@@ -1,5 +1,6 @@
 import React from "react";
-import Helmet from "react-helmet";
+import { Helmet } from "react-helmet-async";
+import PropTypes from "prop-types";
 
 const def = {
   "title": "Home - Simon Weizman",
@@ -21,5 +22,12 @@ function withMeta(d) {
     </Helmet>
   );
 }
+withMeta.propTypes = {
+  title: PropTypes.string,
+  keywords: PropTypes.string,
+  subject: PropTypes.string,
+  author: PropTypes.string,
+  description: PropTypes.string
+};
 
 export default withMeta;

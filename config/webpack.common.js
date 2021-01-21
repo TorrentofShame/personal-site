@@ -5,9 +5,10 @@ const webpack = require("webpack");
 const ESLintPlugin = require("eslint-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WebpackPwaManifest = require("webpack-pwa-manifest");
+const WorkboxPlugin = require("workbox-webpack-plugin");
 
 const helpers = require("./helpers");
-const manifest = require("./manifest.json");
+const manifest = require("./manifest");
 
 const packageJson = require("../package.json");
 const vendorDependencies = Object.keys(packageJson["dependencies"]);
@@ -28,7 +29,7 @@ const babelLoader = {
 
 module.exports = {
   entry: {
-    main: helpers.root("src/index.js"),
+    main: helpers.root("src/index.jsx"),
     vendor: vendorDependencies
   },
   module: {
@@ -75,6 +76,13 @@ module.exports = {
       //title: "Simon Weizman"
       template: helpers.root("public/index.html")
     }),
-    new WebpackPwaManifest(manifest)
+    new WebpackPwaManifest({
+      filename: "manifest.json",
+      ...manifest
+    }),
+    new WorkboxPlugin.GenerateSW({
+      clientsClaim: true,
+      skipWaiting: true
+    })
   ]
 };

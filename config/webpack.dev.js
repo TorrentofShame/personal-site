@@ -14,6 +14,7 @@ module.exports = merge(common, {
   },
   devServer: {
     contentBase: helpers.root("dist"),
+    host: "localhost",
     port: 5000,
     hot: true
   },
