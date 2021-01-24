@@ -6,7 +6,7 @@ import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 
-import ProjectBadge from "./../ProjectBadge";
+import ProjectBadge from "_components/ProjectBadge";
 
 const ProjectLink = ({ name, url }) => <Button size="sm" className="ml-3" variant="primary" href={url}>{name}</Button>;
 ProjectLink.propTypes = {

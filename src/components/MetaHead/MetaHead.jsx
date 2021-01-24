@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 
 /* Images */
 
-import Favicon from "./../../assets/favicon.ico";
+import Favicon from "_assets/favicon.ico";
 
 const def = {
   "title": "Home - Simon Weizman",

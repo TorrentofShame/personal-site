@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Image from "react-bootstrap/Image";
 
-import ProfileImg from "./../../assets/profile.webp";
+import ProfileImg from "_assets/profile.webp";
 
 function Header({ isWarm }) {
   

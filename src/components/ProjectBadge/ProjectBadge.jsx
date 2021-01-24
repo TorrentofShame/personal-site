@@ -1,29 +1,29 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import "./ProjectBadge.scss";
+
 const projectBadges = {
-  python: {"name": "Python", "bgcolor": "#0049DB"},
-  lua: {"name": "Lua", "bgcolor": "#0049DB"},
-  js: {"name": "JavaScript", "bgcolor": "#0049DB"},
-  react: {"name": "React", "bgcolor": "#0049DB"},
-  web: {"name": "Web Design", "bgcolor": "#535A5F"},
-  cad: {"name": "CAD", "bgcolor": "#535A5F"},
-  ml: {"name": "Machine Learning", "bgcolor": "#535A5F"},
-  linux: {"name": "Linux", "bgcolor": "#535A5F"},
-  virtualization: {"name": "Virtualization", "bgcolor": "#535A5F"}
+  python: "Python",
+  lua: "Lua",
+  js: "JavaScript",
+  react: "React",
+  web: "Web Design",
+  cad: "CAD",
+  ml: "Machine Learning",
+  linux: "Linux",
+  virtualization: "Virtualization"
 };
 
 function ProjectBadge({ id }) {
-  let badge_info = projectBadges[id];
-  if (typeof badge_info == "undefined") { console.log(`id:${id}\tinfo:${badge_info}`); }
-  const badgestyle = {backgroundColor: badge_info.bgcolor};
+  let badge_name = projectBadges[id];
+
   return (
     <h4
       key={id}
-      className="organization"
-      style={badgestyle}
+      className={`organization ${id}badge`}
     >
-      {badge_info.name}
+      {badge_name}
     </h4>
   );
 }

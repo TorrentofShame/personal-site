@@ -6,10 +6,11 @@ module.exports = {
   moduleFileExtensions: [ "js", "jsx", "json" ],
   moduleDirectories: ["node_modules"],
   moduleNameMapper: {
-    "^_components(.*)$": "<rootDir>/components/$1",
-    "^_pages(.*)$": "<rootDir>/pages/$1",
-    "^_assets(.*)$": "<rootDir>/assets/$1",
-    "^_app(.*)$": "<rootDir>/app/$1"
+    "^_components(.*)$": "<rootDir>/src/components/$1",
+    "^_pages(.*)$": "<rootDir>/src/pages/$1",
+    "^_assets(.*)$": "<rootDir>/src/assets/$1",
+    "^_app(.*)$": "<rootDir>/src/app/$1",
+    "^_styles(.*)$": "<rootDir>/src/styles/$1"
   },
   setupFiles: [
     "<rootDir>/config/jest.setup.js",

@@ -63,7 +63,14 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: [ ".jsx", ".js", ".scss" ]
+    extensions: [ ".jsx", ".js", ".scss" ],
+    alias: {
+      _components: helpers.root("src/components/"),
+      _pages: helpers.root("src/pages/"),
+      _assets: helpers.root("src/assets/"),
+      _app: helpers.root("src/app/"),
+      _styles: helpers.root("src/styles")
+    }
   },
   plugins: [
     new webpack.DefinePlugin({

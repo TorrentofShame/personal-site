@@ -4,13 +4,13 @@ import { HelmetProvider } from "react-helmet-async";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 
-import Navigation from "./../components/Navigation";
-import MetaHead from "./../components/MetaHead";
-import Footer from "./../components/Footer";
+import Navigation from "_components/Navigation";
+import MetaHead from "_components/MetaHead";
+import Footer from "_components/Footer";
 
 /* Pages */
-import HomePage from "./../pages/HomePage";
-import NotFoundPage from "./../pages/NotFoundPage";
+import HomePage from "_pages/HomePage";
+import NotFoundPage from "_pages/NotFoundPage";
 
 const helmetContext = {};
 

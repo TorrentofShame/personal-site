@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Header from "./../../components/Header";
-import CV from "./../../components/CV";
-import CVSection from "./../../components/CVSection";
-import Experience from "./../../components/Experience";
-import Education from "./../../components/Education";
-import Certification from "./../../components/Certification";
-import Project from "./../../components/Project";
+import Header from "_components/Header";
+import CV from "_components/CV";
+import CVSection from "_components/CVSection";
+import Experience from "_components/Experience";
+import Education from "_components/Education";
+import Certification from "_components/Certification";
+import Project from "_components/Project";
 
 import Experiences from "./experiences.json";
 import Projects from "./projects.json";

@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Image from "react-bootstrap/Image";
 
-import SiteLogo from "./../../assets/sitelogo.webp";
+import SiteLogo from "_assets/sitelogo.webp";
 
 
 const Navigation = () => {

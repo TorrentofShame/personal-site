@@ -1,0 +1,7 @@
+@use "~_styles/partials/variables";
+
+@each $name, $color in variables.$pbge-colors {
+  .#{$name}badge {
+    background-color: $color !important;
+  }
+}

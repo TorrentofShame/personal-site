@@ -1,4 +1,3 @@
-
 // Fonts
 $font-family-sans-serif: Lato,sans-serif;
 
@@ -9,14 +8,32 @@ $grad-start: #313437;
 $grad-end: #282d32;
 
 // Colors
+$primary: #0049DB;
+$secondary: #535A5F;
 
 //$body-bg: #FFF;
 $period-color: #3B4044;
-$org-color: #0049DB;
+$org-color: $primary;
 $edu-color: #186329;
 $link-color: #282b2d;
 $body-color: #212529;
 $navbar-dark-color: #FFF;
+
+// Project Badges
+
+// scss-docs-start project-badges-colors-map
+$pbge-colors: (
+  "python":   $primary,
+  "lua":      $primary,
+  "js":       $primary,
+  "react":    $primary,
+  "web":      $secondary,
+  "cad":      $secondary,
+  "ml":       $secondary,
+  "linux":    $secondary,
+  "virtualization": $secondary
+) !default;
+// scss-docs-end project-badges-colors-map
 
 // Buttom Stuff
 $btn-padding-x: 1rem;
