@@ -14,6 +14,7 @@ const Certification = ({ name, url, issuer, issueDate, expireDate, logo }) => {
     <Row className="item">
       <Col md={1}>
         <Image
+          alt={name}
           src={require(`_assets/certs/${logo}.png`)}
         />
       </Col>
