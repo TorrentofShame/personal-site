@@ -1,0 +1,26 @@
+[
+	{
+		"jobTitle": "Volunteer Lua Developer",
+		"org": "Innovative Gamers",
+		"startDate": "Mar 2019",
+		"endDate": "Feb 2020",
+		"desc": [
+      "Developed a player management system utilizing an SQL database which enhanced the player experience and assisted in managing the player hierarchy.",
+      "Designed custom UI that integrated existing features to assist players and staff in managing characters and the server.",
+      "Cooperated with staff and players to increase player retention during down-time by 50%.",
+      "Documented the steps necessary to configure the different features on the server.",
+      "Maintained and managed the serverÎé}s code and database."
+		]
+	},
+	{
+		"jobTitle": "Summer Camp Counselor",
+		"org": "Peg Camp",
+		"startDate": "Jul 2019",
+		"endDate": "Aug 2019",
+		"desc": [
+			"Part of a team of counselors, whose goal was to create a safe and fun environment where kids can learn about up-to-date technology in video game design, engineering, coding, and computer graphics.",
+			"Taught multiple computer programs to children at the beginning, intermediate, and advanced levels, including: Python and Tinker CAD",
+			"Supported campers through the learning process ensuring a fun and successful experience"
+		]
+	}
+]

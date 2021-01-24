@@ -1,0 +1,141 @@
+@import "partials/variables";
+
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.navbar {
+  @media (min-width: 576px) {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+}
+
+img {
+  pointer-events: none;
+  -moz-user-select: none;
+  user-drag: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.gradient {
+  background: linear-gradient(120deg, $grad-start, $grad-end);
+  color: $body-bg;
+
+  &.page-footer {
+    border-top: none;
+    a {
+      color: $body-bg!important;
+      opacity: 1!important;
+    }
+  }
+}
+
+.page-footer {
+  padding-top: 35px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.portfolio-block {
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+
+  .heading {
+      margin-bottom: 50px;
+      h2 {
+        text-transform: uppercase;
+        font-weight: $font-weight-bold;
+        font-size: 1.4rem;
+      }
+    @media (min-width: 768px) {
+      text-align: center;
+      margin-bottom: 80px;
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
+  
+  &.cv {
+    padding-top: 70px;
+
+    .item {
+      @media (min-width: 768px) {
+        font-weight: $font-weight-light;
+      }
+    }
+
+    h2 {
+      font-weight: $font-weight-bold;
+      margin-bottom: 70px;
+    }
+    h3 {
+      font-size: 1.3rem;
+
+      .education {
+        font-weight: $font-weight-bold;
+      }
+    }
+
+    .group {
+      max-width: 800px;
+      margin: auto;
+
+      &:not(:first-child) {
+        margin-top: 90px;
+      }
+
+      .period {
+        color: $period-color;
+        font-size: .8rem;
+        float: none;
+        font-weight: $font-weight-bold;
+        margin-top: 4px;
+        opacity: .8;
+        @media (min-width: 768px) {
+          float: right;
+        }
+      }
+
+      .organization {
+        font-size: .85em;
+        background-color: $org-color;
+        display: inline-block;
+        color: $body-bg;
+        padding: 2px 8px;
+        border-radius: 2em;
+        .education {
+          background-color: $edu-color;
+        }
+      }
+
+      .item {
+        padding-bottom: 10px;
+        margin-bottom: 25px;
+        border-bottom: 1px solid #eee;
+      }
+    }
+  }
+  &.block-intro {
+    text-align: center;
+    &.about-me {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    p {
+      font-size: 1.5em;
+      margin-bottom: 30px;
+    }
+  }
+}
