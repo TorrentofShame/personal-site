@@ -26,9 +26,12 @@ lint:
 test:
   stage: test
   script:
-    - echo "Testing"
-    - npm test
-    - echo "Testing Complete"
+    - npm run test:gl
+  artifacts:
+    when: always
+    reports:
+      junit:
+        - junit.xml
 
 pages:
   stage: deploy
