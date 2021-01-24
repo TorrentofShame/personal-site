@@ -1,9 +1,0 @@
-{
-  "name": "Simon Weizman Portfolio",
-  "short_name": "SW Portfolio",
-  "orientation": "portrait",
-  "display": "standalone",
-  "start_url": ".",
-  "theme_color": "#282D32",
-  "background_color": "#FFFFFF"
-}

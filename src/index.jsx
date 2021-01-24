@@ -1,13 +1,18 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import ReactDOM from "react-dom";
-import _ from "lodash";
+import smoothScrollPolyfill from "smoothscroll-polyfill";
 
 import App from "./App";
-import "./style.scss";
+import "./styles/index.scss";
+
+const isProd = process.env.NODE_ENV !== "dev";
+const render = isProd ? ReactDOM.hydrate : ReactDOM.render;
+
+smoothScrollPolyfill.polyfill();
 
 /* Render the App */
-ReactDOM.render(
+render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
@@ -15,7 +20,7 @@ ReactDOM.render(
 );
 
 /* Register Service Worker */
-if ("serviceWorker" in navigator) {
+if (isProd && "serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker.register("/service-worker.js")
       .then(registration => {

@@ -4,7 +4,7 @@ const helpers = require("./helpers");
 module.exports = {
   short_name: "SW Portfolio",
   name: "Simon Weizman Portfolio",
-  start_url: ".",
+  start_url: "/",
   display: "standalone",
   theme_color: "#282D32",
   background_color: "#FFFFFF",

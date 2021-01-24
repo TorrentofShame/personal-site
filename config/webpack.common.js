@@ -4,6 +4,7 @@ const webpack = require("webpack");
 /* Plugins */
 const ESLintPlugin = require("eslint-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const WebpackPwaManifest = require("webpack-pwa-manifest");
 const WorkboxPlugin = require("workbox-webpack-plugin");
 
@@ -14,7 +15,6 @@ const packageJson = require("../package.json");
 const vendorDependencies = Object.keys(packageJson["dependencies"]);
 
 const NODE_ENV = process.env.NODE_ENV;
-const isProd = NODE_ENV !== "dev";
 
 const babelLoader = {
   loader: "babel-loader",
@@ -42,29 +42,37 @@ module.exports = {
         ]
       },
       {
-        test: /\.(svg|png|jpe?g|gif|ico|webp)$/i,
-        use: {
-          loader: "file-loader",
-          options: {
-            name: isProd ? "[name]-[contenthash].[ext]" : "[name].[ext]",
-            outputPath: "assets"
-          }
+        test: /\.(jpe?g|png|ico|webp)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "[name].[hash][ext][query]",
         }
       },
       {
         test: /\.html$/,
         use: ["html-loader"]
+      },
+      {
+        test: /\.s[ac]ss$/,
+        use: [
+          "style-loader",
+          "css-loader",
+          "sass-loader"
+        ]
       }
     ],
   },
   resolve: {
-    extensions: [ ".jsx", ".js" ]
+    extensions: [ ".jsx", ".js", ".scss" ]
   },
   plugins: [
     new webpack.DefinePlugin({
       "process.env": {
         NODE_ENV: JSON.stringify(NODE_ENV)
       }
+    }),
+    new MiniCssExtractPlugin({
+      filename: "[name].[contenthash].css"
     }),
     new ESLintPlugin({
       extensions: ["js", "jsx"],
@@ -73,16 +81,14 @@ module.exports = {
       emitWarning: true
     }),
     new HtmlWebpackPlugin({
-      //title: "Simon Weizman"
+      favicon: helpers.root("public/favicon.png"),
       template: helpers.root("public/index.html")
     }),
     new WebpackPwaManifest({
       filename: "manifest.json",
+      inject: true,
+      ios: true,
       ...manifest
-    }),
-    new WorkboxPlugin.GenerateSW({
-      clientsClaim: true,
-      skipWaiting: true
     })
   ]
 };

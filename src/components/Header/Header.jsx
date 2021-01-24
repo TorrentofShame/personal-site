@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Image from "react-bootstrap/Image";
 
+import ProfileImg from "./../../assets/profile.webp";
 
 function Header({ isWarm }) {
   
@@ -17,7 +18,13 @@ function Header({ isWarm }) {
     >
       <Container>
         <Row>
-          <Image alt="" className="avatar" src="https://cdn.weizman.us/portfolio-assets/images/profile.webp" roundedCircle fluid width="450" height="450" />
+          <Image
+            alt=""
+            className="avatar"
+            src={ProfileImg}
+            roundedCircle fluid
+            width="450" height="450"
+          />
         </Row>
         <h3 className="text-center">Simon Weizman</h3>
         <Row className="about-me">

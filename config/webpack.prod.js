@@ -1,8 +1,9 @@
+/* eslint-disable no-var */
 const { merge } = require("webpack-merge");
+const WorkboxPlugin = require("workbox-webpack-plugin");
 
 /* Plugins */
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 const helpers = require("./helpers");
@@ -16,22 +17,20 @@ module.exports = merge(common, {
     publicPath: "/",
     path: helpers.root("dist")
   },
-  module: {
-    rules: [
-      {
-        test: /\.s[ac]ss$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          "css-loader",
-          "sass-loader"
-        ]
-      }
-    ]
-  },
   plugins: [
     new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin({
-      filename: "[name].[contenthash].css"
+    new WorkboxPlugin.GenerateSW({
+      clientsClaim: true,
+      skipWaiting: true,
+      runtimeCaching: [
+        {
+          urlPattern: /^https:\/\/fonts\.gstatic\.com/,
+          handler: "StaleWhileRevalidate",
+          options: {
+            cacheName: "google-fonts-webfonts"
+          }
+        }
+      ]
     })
   ],
   optimization: {

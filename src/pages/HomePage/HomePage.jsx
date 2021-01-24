@@ -3,7 +3,14 @@ import PropTypes from "prop-types";
 
 import Header from "./../../components/Header";
 import CV from "./../../components/CV";
-import Projects from "./../../components/Projects";
+import CVSection from "./../../components/CVSection";
+import Experience from "./../../components/Experience";
+import Education from "./../../components/Education";
+import Certification from "./../../components/Certification";
+import Project from "./../../components/Project";
+
+import Experiences from "./experiences.json";
+import Projects from "./projects.json";
 
 const certs = [
   {
@@ -32,19 +39,39 @@ const certs = [
   },
 ];
 
-function HomePage({ meta, isWarm }) {
+function HomePage({ isWarm }) {
+
+  let experiences = Experiences.map((d,k) => <Experience key={k} {...d} />);
+  let certifications = certs.map((d,k) => <Certification key={k} {...d} />);
+  let projects = Projects.map((d,k) => <Project key={k} {...d} />);
 
   return (
     <main>
-      {meta}
       <Header isWarm={isWarm} />
-      <CV experiences={require("./experiences.json")} certs={certs} />
-      <Projects projects={require("./projects.json")} />
+      <CV>
+        <CVSection name="experience">
+          {experiences }
+        </CVSection>
+        <CVSection name="education">
+          <Education
+            degree="Computer Science"
+            institution="University of Central Florida"
+            startDate="Jun 2020"
+            endDate="May 2024"
+            desc="Currently enrolled as a Computer Science major."
+          />
+        </CVSection>
+        <CVSection name="certifications">
+          {certifications }
+        </CVSection>
+        <CVSection name="projects">
+          {projects }
+        </CVSection>
+      </CV>
     </main>
   );
 }
 HomePage.propTypes = {
-  meta: PropTypes.object.isRequired,
   isWarm: PropTypes.bool.isRequired
 };
 

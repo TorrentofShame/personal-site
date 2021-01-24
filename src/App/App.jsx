@@ -1,11 +1,16 @@
 import React from "react";
 
 import { HelmetProvider } from "react-helmet-async";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 
 import Navigation from "./../components/Navigation";
+import MetaHead from "./../components/MetaHead";
 import Footer from "./../components/Footer";
+
+/* Pages */
+import HomePage from "./../pages/HomePage";
+import NotFoundPage from "./../pages/NotFoundPage";
 
 const helmetContext = {};
 
@@ -48,12 +53,21 @@ export class App extends React.Component {
       <HelmetProvider context={helmetContext}>
         <Router>
 
+          <MetaHead />
+
           <Container className="p-0" fluid={true}>
 
-            <Navigation
-              isWarm={this.state.isWarm}
-              home={this.state.home}
-            />
+            <Navigation />
+
+            {/* Routes */}
+            <Switch>
+              <Route path="/" exact render={() =>
+                <HomePage
+                  isWarm={this.state.isWarm}
+                />}
+              />
+              <Route path="*" component={NotFoundPage} />
+            </Switch>
         
             <Footer />
 
