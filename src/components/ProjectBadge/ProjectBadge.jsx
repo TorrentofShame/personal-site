@@ -18,6 +18,10 @@ const projectBadges = {
 function ProjectBadge({ id }) {
   let badge_name = projectBadges[id];
 
+  if (!badge_name) {
+    return null;
+  }
+
   return (
     <h4
       key={id}

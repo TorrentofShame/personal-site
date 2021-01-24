@@ -10,7 +10,8 @@ module.exports = {
     "^_pages(.*)$": "<rootDir>/src/pages/$1",
     "^_assets(.*)$": "<rootDir>/src/assets/$1",
     "^_app(.*)$": "<rootDir>/src/app/$1",
-    "^_styles(.*)$": "<rootDir>/src/styles/$1"
+    "^_styles(.*)$": "<rootDir>/src/styles/$1",
+    "^_utils(.*)$": "<rootDir>/src/utils/$1"
   },
   setupFiles: [
     "<rootDir>/config/jest.setup.js",

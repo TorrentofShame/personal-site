@@ -69,7 +69,8 @@ module.exports = {
       _pages: helpers.root("src/pages/"),
       _assets: helpers.root("src/assets/"),
       _app: helpers.root("src/app/"),
-      _styles: helpers.root("src/styles")
+      _styles: helpers.root("src/styles"),
+      _utils: helpers.root("src/utils")
     }
   },
   plugins: [

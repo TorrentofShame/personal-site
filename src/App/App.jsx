@@ -21,8 +21,8 @@ export class App extends React.Component {
     super(props);
 
 
-    let today = new Date(),
-      month = today.getMonth() + 1;
+    let today = new Date(Date.now());
+    let month = today.getMonth() + 1;
 
     this.state = {
       title: "Simon Weizman",
