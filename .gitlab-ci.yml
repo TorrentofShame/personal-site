@@ -12,6 +12,7 @@ before_script:
 
 stages:
   - lint
+  - test
   - deploy
 
 lint:
@@ -21,6 +22,13 @@ lint:
   artifacts:
     reports:
       codequality: gl-codequality.json
+
+test:
+  stage: test
+  script:
+    - echo "Testing"
+    - npm test
+    - echo "Testing Complete"
 
 pages:
   stage: deploy
