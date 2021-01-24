@@ -3,7 +3,7 @@ const path = require("path");
 module.exports = {
   rootDir: path.join(__dirname, ".."),
   collectCoverageFrom: ["**/*.{js,jsx}"],
-  moduleFileExtensions: [ "js", "jsx" ],
+  moduleFileExtensions: [ "js", "jsx", "json" ],
   moduleDirectories: ["node_modules"],
   moduleNameMapper: {
     "^_components(.*)$": "<rootDir>/components/$1",
@@ -17,8 +17,8 @@ module.exports = {
   ],
   testURL: "http://localhost",
   transform: {
-    "^.+\\.[tj]sx?$": "babel-jest",
+    "^.+\\.jsx?$": "babel-jest",
     /* eslint-disable-next-line */
-    "\\.(jpe?g|png|gif|eot|otf|webp|svg|ttf|woff2?|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/config/assetsTransformer.js"
+    "\\.(jpe?g|png|gif|eot|otf|webp|svg|ttf|woff2?|mp4|webm|wav|mp3|m4a|aac|oga|ico|css|s[ac]ss|less)$": "<rootDir>/config/assetsTransformer.js"
   }
 };

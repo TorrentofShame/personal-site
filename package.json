@@ -12,7 +12,7 @@
     "lint": "eslint src",
     "lint:fix": "npm run lint -- --fix",
     "lint:gl": "npm run lint -- --format gitlab",
-    "test": "jest"
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest src --config=.\\config\\jest.config.js"
   },
   "dependencies": {
     "bootstrap": "^4.5.3",

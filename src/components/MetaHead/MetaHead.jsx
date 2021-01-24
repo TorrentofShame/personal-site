@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 
 /* Images */
+
 import Favicon from "./../../assets/favicon.ico";
 
 const def = {
