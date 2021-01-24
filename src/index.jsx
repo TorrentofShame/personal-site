@@ -7,7 +7,8 @@ import App from "./App";
 import "_styles/index.scss";
 
 const isProd = process.env.NODE_ENV !== "dev";
-const render = isProd ? ReactDOM.hydrate : ReactDOM.render;
+//const render = isProd ? ReactDOM.hydrate : ReactDOM.render;
+const render = ReactDOM.render;
 
 smoothScrollPolyfill.polyfill();
 
