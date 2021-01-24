@@ -5,6 +5,7 @@ const WorkboxPlugin = require("workbox-webpack-plugin");
 /* Plugins */
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 const helpers = require("./helpers");
 const common = require("./webpack.common");
@@ -34,8 +35,12 @@ module.exports = merge(common, {
     })
   ],
   optimization: {
+    minimize: true,
     minimizer: [
       "...",
+      new TerserPlugin({
+        test: /\.js(\?.*)?$/i
+      }),
       new CssMinimizerPlugin({
         minimizerOptions: {
           preset: [
