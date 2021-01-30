@@ -6,6 +6,8 @@ import Image from "react-bootstrap/Image";
 
 import "./Certification.scss";
 
+const certImgSize = 50;
+
 const Certification = ({ name, url, issuer, issueDate, expireDate, logo }) => {
   
   let period = `Issued ${issueDate} — ` + (expireDate ? `Expires ${expireDate}` : "No Expiration Date");
@@ -16,6 +18,8 @@ const Certification = ({ name, url, issuer, issueDate, expireDate, logo }) => {
         <Image
           alt={name}
           src={require(`_assets/certs/${logo}.png`)}
+          width={certImgSize}
+          height={certImgSize}
         />
       </Col>
       <Col md={6}>
