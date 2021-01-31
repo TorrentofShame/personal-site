@@ -1,10 +1,12 @@
 /* eslint-disable no-var */
 const { merge } = require("webpack-merge");
-const WorkboxPlugin = require("workbox-webpack-plugin");
+const glob = require("glob");
 
 /* Plugins */
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const WorkboxPlugin = require("workbox-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const PurgeCssPlugin = require("purgecss-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 
 const helpers = require("./helpers");
@@ -32,6 +34,9 @@ module.exports = merge(common, {
           }
         }
       ]
+    }),
+    new PurgeCssPlugin({
+      paths: glob.sync(`${helpers.root("src")}/**/*`, { nodir: true })
     })
   ],
   optimization: {
@@ -39,7 +44,7 @@ module.exports = merge(common, {
     minimizer: [
       "...",
       new TerserPlugin({
-        test: /\.js(\?.*)?$/i
+        test: /\.jsx?$/i
       }),
       new CssMinimizerPlugin({
         minimizerOptions: {

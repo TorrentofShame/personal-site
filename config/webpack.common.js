@@ -5,8 +5,8 @@ const webpack = require("webpack");
 const ESLintPlugin = require("eslint-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const WebpackPwaManifest = require("webpack-pwa-manifest");
-const WorkboxPlugin = require("workbox-webpack-plugin");
 
 const helpers = require("./helpers");
 const manifest = require("./manifest");
@@ -23,6 +23,9 @@ const babelLoader = {
     presets: [
       "@babel/preset-env",
       "@babel/preset-react"
+    ],
+    plugins: [
+      "@babel/plugin-syntax-dynamic-import"
     ]
   }
 };
@@ -42,7 +45,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(jpe?g|png|ico|webp|svg)$/i,
+        test: /\.(jpe?g|png|ico|webp|svg|eot|ttf|woff2?)$/i,
         type: "asset/resource",
         generator: {
           filename: "[name].[hash][ext][query]",
@@ -56,21 +59,28 @@ module.exports = {
         test: /\.s[ac]ss$/,
         use: [
           "style-loader",
-          "css-loader",
+          {
+            loader: "css-loader",
+            options: {
+              sourceMap: true,
+              importLoaders: 1
+            }
+          },
           "sass-loader"
         ]
       }
-    ],
+    ]
   },
   resolve: {
     extensions: [ ".jsx", ".js", ".scss" ],
     alias: {
-      _components: helpers.root("src/components/"),
-      _pages: helpers.root("src/pages/"),
-      _assets: helpers.root("src/assets/"),
-      _app: helpers.root("src/app/"),
+      _components: helpers.root("src/components"),
+      _pages: helpers.root("src/pages"),
+      _assets: helpers.root("src/assets"),
+      _app: helpers.root("src/app"),
       _styles: helpers.root("src/styles"),
-      _utils: helpers.root("src/utils")
+      _utils: helpers.root("src/utils"),
+      _webfonts: helpers.root("src/webfonts")
     }
   },
   plugins: [
@@ -97,6 +107,17 @@ module.exports = {
       inject: true,
       ios: true,
       ...manifest
+    }),
+    new MiniCssExtractPlugin({
+      filename: "[name]-[contenthash].css",
+      ignoreOrder: true
     })
-  ]
+  ],
+  optimization: {
+    minimize: true,
+    minimizer: [
+      "...",
+      new CssMinimizerPlugin()
+    ]
+  }
 };

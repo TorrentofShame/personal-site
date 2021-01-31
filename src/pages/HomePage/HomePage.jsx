@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import PropTypes from "prop-types";
 
 import Header from "_components/Header";
@@ -7,7 +7,7 @@ import CVSection from "_components/CVSection";
 import Experience from "_components/Experience";
 import Education from "_components/Education";
 import Certification from "_components/Certification";
-import Project from "_components/Project";
+const Project = React.lazy(() => import("_components/Project"));
 
 import Experiences from "./experiences.json";
 import Projects from "./projects.json";
@@ -65,7 +65,9 @@ function HomePage({ isWarm }) {
           {certifications }
         </CVSection>
         <CVSection name="projects">
-          {projects }
+          <Suspense fallback={<div>Loading...</div>}>
+            {projects }
+          </Suspense>
         </CVSection>
       </CV>
     </main>

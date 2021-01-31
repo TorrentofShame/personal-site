@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 
 import { HelmetProvider } from "react-helmet-async";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -9,8 +9,8 @@ import MetaHead from "_components/MetaHead";
 import Footer from "_components/Footer";
 
 /* Pages */
-import HomePage from "_pages/HomePage";
-import NotFoundPage from "_pages/NotFoundPage";
+const HomePage = React.lazy(() => import("_pages/HomePage"));
+const NotFoundPage = React.lazy(() => import("_pages/NotFoundPage"));
 
 const helmetContext = {};
 
@@ -60,14 +60,16 @@ export class App extends React.Component {
             <Navigation />
 
             {/* Routes */}
-            <Switch>
-              <Route path="/" exact render={() =>
-                <HomePage
-                  isWarm={this.state.isWarm}
-                />}
-              />
-              <Route path="*" component={NotFoundPage} />
-            </Switch>
+            <Suspense fallback={<div>Loading...</div>}>
+              <Switch>
+                <Route path="/" exact render={() =>
+                  <HomePage
+                    isWarm={this.state.isWarm}
+                  />}
+                />
+                <Route path="*" component={NotFoundPage} />
+              </Switch>
+            </Suspense>
         
             <Footer />
 
