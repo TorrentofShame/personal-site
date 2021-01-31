@@ -13,7 +13,7 @@ const ProjectMock = {
   links: [
     { name: "View", url: "https://something.com/mydmsareatzero" }
   ],
-  desc: "Lorem ipsum dolor sit amet.",
+  description: "Lorem ipsum dolor sit amet.",
 };
 
 describe("<Project />", () => {
