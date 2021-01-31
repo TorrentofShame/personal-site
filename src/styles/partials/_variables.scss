@@ -12,11 +12,12 @@ $fa-font-path: "~_webfonts";
 // Colors
 $primary: #0049DB;
 $secondary: #535A5F;
+$tertiary: #186329;
 
 //$body-bg: #FFF;
 $period-color: #3B4044;
 $org-color: $primary;
-$edu-color: #186329;
+$edu-color: $tertiary;
 $link-color: #282b2d;
 $body-color: #212529;
 $navbar-dark-color: #FFF;
@@ -33,7 +34,9 @@ $pbge-colors: (
   "cad":      $secondary,
   "ml":       $secondary,
   "linux":    $secondary,
-  "virtualization": $secondary
+  "virtualization": $secondary,
+  "active":   $tertiary,
+  "sass":     $primary
 ) !default;
 // scss-docs-end project-badges-colors-map
 

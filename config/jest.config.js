@@ -12,7 +12,8 @@ module.exports = {
     "^_app(.*)$": "<rootDir>/src/app/$1",
     "^_styles(.*)$": "<rootDir>/src/styles/$1",
     "^_utils(.*)$": "<rootDir>/src/utils/$1",
-    "^_webfonts(.*)$": "<rootDir>/src/webfonts/$1"
+    "^_webfonts(.*)$": "<rootDir>/src/webfonts/$1",
+    "^_config(.*)$": "<rootDir>/config/$1"
   },
   setupFiles: [
     "<rootDir>/config/jest.setup.js",

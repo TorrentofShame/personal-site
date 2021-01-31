@@ -1,0 +1,216 @@
+{
+  "profile": {
+    "name": "Simon Weizman",
+    "headline": "Full-stack Web Developer and UCF Computer Science Student",
+    "email": "contact@simon.weizman.us",
+    "location": "Florida, US",
+    "links": [
+      {
+        "name": "Linkedin",
+        "url": "linkedin.com/in/simonweizman",
+        "faIcon": "fab fa-linkedin-in"
+      },
+      {
+        "name": "Facebook",
+        "url": "facebook.com/simon.weizman.13",
+        "faIcon": "fab fa-facebook-f"
+      },
+      {
+        "name": "Twitter",
+        "url": "twitter.com/torrentofshame",
+        "faIcon": "fab fa-twitter"
+      },
+      {
+        "name": "Instagram",
+        "url": "instagram.com/mviwxg",
+        "faIcon": "fab fa-instagrab"
+      },
+      {
+        "name": "GitLab",
+        "url": "gitlab.com/torrentofshame",
+        "faIcon": "fab fa-gitlab"
+      },
+      {
+        "name": "GitHub",
+        "url": "github.com/torrentofshame",
+        "faIcon": "fab fa-github"
+      },
+      {
+        "name": "Discord",
+        "url": "https://discord.gg/MYvd3RB",
+        "faIcon": "fab fa-discord"
+      }
+    ]
+  },
+  "summary": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+  "experiences": [
+    {
+      "jobTitle": "Volunteer Lua Developer",
+      "organization": "Innovative Gamers",
+      "startDate": "Mar 2019",
+      "endDate": "Feb 2020",
+      "location": "Remote/Virtual",
+      "description": [
+        "Developed a player management system utilizing an SQL database which enhanced the player experience and assisted in managing the player hierarchy.",
+        "Designed custom UI that integrated existing features to assist players and staff in managing characters and the server.",
+        "Cooperated with staff and players to increase player retention during down-time by 50%.",
+        "Documented the steps necessary to configure the different features on the server.",
+        "Maintained and managed the serverÎé}s code and database."
+      ]
+    },
+    {
+      "jobTitle": "Summer Camp Counselor",
+      "organization": "Peg Camp",
+      "startDate": "Jul 2019",
+      "endDate": "Aug 2019",
+      "location": "South Broward High School",
+      "description": [
+        "Part of a team of counselors, whose goal was to create a safe and fun environment where kids can learn about up-to-date technology in video game design, engineering, coding, and computer graphics.",
+        "Taught multiple computer programs to children at the beginning, intermediate, and advanced levels, including: Python and Tinker CAD",
+        "Supported campers through the learning process ensuring a fun and successful experience"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Verum Interavtive Starmap",
+      "startDate": "Dec 2020",
+      "endDate": "Jan 2021",
+      "badges": ["web", "js", "react", "sass"],
+      "wakatime": "verum-interactive-starmap",
+      "links": [
+        {
+          "name": "View",
+          "url": "https://verumstarmap.torrentofshame.com"
+        },
+        {
+          "name": "GitLab",
+          "url": "https://gitlab.com/torrentofshame/verum-interactive-starmap"
+        }
+      ],
+      "description": "An interactive starmap for Arcadum's world of Verum. Art is by Yowto with permission."
+    },
+    {
+      "name": "Web Email Client",
+      "startDate": "Jul 2020",
+      "badges": ["js", "web"],
+      "links": [
+        {
+          "name": "GitLab",
+          "url": "https://gitlab.com/torrentofshame/web-email-client"
+        }
+      ],
+      "description": "Basically a Gmail/Outlook Clone architected with NodeJS and Express, etc. to help me learn more about Full-Stack Development and best practices for production."
+    },
+    {
+      "name": "Personal Portfolio Website",
+      "startDate": "Nov 2018",
+      "badges": ["js", "react", "web"],
+      "wakatime": "personal-site",
+      "links": [
+        {
+          "name": "View",
+          "url": "https://simon.weizman.us"
+        },
+        {
+          "name": "GitLab",
+          "url": "https://gitlab.com/torrentofshame/personal-site"
+        }
+      ],
+      "description": "My personal website has been created by me; however, it is not-responsive and it is sorely out of date so I am currently deciding between 4 designs for the website, 3 of them based on Bootstrap 4."
+    },
+    {
+      "name": "Why don't people format their numbers browser extension",
+      "startDate": "Sep 2020",
+      "endDate": "Sep 2020",
+      "badges": ["js", "web"],
+      "links": [
+        {
+          "name": "Chrome Web Store",
+          "url": "https://chrome.google.com/webstore/detail/why-dont-people-format-th/podmdilnbokjlfjelmomaikopimbfghn/"
+        },
+        {
+          "name": "GitLab",
+          "url": "https://gitlab.com/torrentofshame/why-dont-people-format-their-numbers"
+        }
+      ],
+      "description": "I created a Google Chrome browser extension using JavaScript to help me read large, especially unformatted numbers."
+    },
+    {
+      "name": "Personal Homelab Server",
+      "startDate": "Mar 2018",
+      "endDate": "Jul 2020",
+      "badges": ["linux", "virtualization"],
+      "links": [],
+      "description": "I owned, maintained, and administered an old Dell Poweredge R710 Server that I purchased from E-bay. I deployed the server in my home running Proxmox VE as it was a free and flexible environment which I utilized to learn more about server administration/management."
+    },
+    {
+      "name": "First ML - Ai plays Snake",
+      "startDate": "Mar 2020",
+      "endDate": "Apr 2020",
+      "badges": ["python", "ml"],
+      "links": [
+        {
+          "name": "GitLab",
+          "url": "https://gitlab.com/torrentofshame/snakeai"
+        }
+      ],
+      "description": "My first Machine Learning Project, a failed attempt to make the computer play snake."
+    },
+    {
+      "name": "PyChessbot",
+      "startDate": "Apr 2019",
+      "endDate": "Oct 2019",
+      "badges": ["python"],
+      "links": [
+        {
+          "name": "GitLab",
+          "url": "https://gitlab.com/torrentofshame/PyChessbot"
+        }
+      ],
+      "description": "A program to play chess architected with the PyGame framework and written in Python, originally built for the APCSP 2019 Create Task"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Computer Science BS",
+      "institution": "University of Central Florida",
+      "startDate": "Jul 2020",
+      "endDate": "May 2024",
+      "description": "Currently enrolled as a Computer Science major."
+    },
+    {
+      "degree": "High School Diploma",
+      "institution": "South Broward High School",
+      "startDate": "Aug 2016",
+      "endDate": "May 2020",
+      "description": "Participated in FTC, Science Olympiad, and Skills USA."
+    }
+  ],
+  "certifications": [
+    {
+      "url": "https://www.youracclaim.com/badges/81aef082-ffbf-4086-9854-079e7d86012c",
+      "logo": "autodesk-inventor-certified-user",
+      "name": "Autodesk Inventor Certified User",
+      "issuer": "Autodesk",
+      "issueDate": "May 2020"
+    },
+    {
+      "url": "https://www.youracclaim.com/badges/b51faed3-73b3-4911-9b7f-0c32bb5e96f9",
+      "logo": "autodesk-autocad-certified-user",
+      "name": "Autodesk AutoCAD Certified User",
+      "issuer": "Autodesk",
+      "issueDate": "Feb 2020"
+    },
+    {
+      "url": "https://www.youracclaim.com/badges/f24472e9-1f36-43d4-9ff1-fb160271e9a5",
+      "logo": "autocad-certified-professional",
+      "name": "AutoCAD Certified Professional",
+      "issuer": "Autodesk",
+      "issueDate": "Jun 2020",
+      "expireDate": "Jun 2023"
+    }
+  ],
+  "skills": {
+  }
+}

@@ -5,7 +5,6 @@ const webpack = require("webpack");
 const ESLintPlugin = require("eslint-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const WebpackPwaManifest = require("webpack-pwa-manifest");
 
 const helpers = require("./helpers");
@@ -72,7 +71,7 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: [ ".jsx", ".js", ".scss" ],
+    extensions: [ ".jsx", ".js", ".scss", ".json", ".html" ],
     alias: {
       _components: helpers.root("src/components"),
       _pages: helpers.root("src/pages"),
@@ -80,7 +79,8 @@ module.exports = {
       _app: helpers.root("src/app"),
       _styles: helpers.root("src/styles"),
       _utils: helpers.root("src/utils"),
-      _webfonts: helpers.root("src/webfonts")
+      _webfonts: helpers.root("src/webfonts"),
+      _config: helpers.root("config")
     }
   },
   plugins: [
@@ -88,9 +88,6 @@ module.exports = {
       "process.env": {
         NODE_ENV: JSON.stringify(NODE_ENV)
       }
-    }),
-    new MiniCssExtractPlugin({
-      filename: "[name].[contenthash].css"
     }),
     new ESLintPlugin({
       extensions: ["js", "jsx"],
@@ -112,12 +109,5 @@ module.exports = {
       filename: "[name]-[contenthash].css",
       ignoreOrder: true
     })
-  ],
-  optimization: {
-    minimize: true,
-    minimizer: [
-      "...",
-      new CssMinimizerPlugin()
-    ]
-  }
+  ]
 };

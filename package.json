@@ -1,14 +1,14 @@
 {
   "name": "personal-site",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "private": true,
   "homepage": "/",
   "scripts": {
     "start": "cross-env NODE_ENV=dev webpack serve --hot --env dev --progress",
     "build": "npm run build:prod",
-    "build:prod": "cross-env NODE_ENV=prod webpack",
+    "build:prod": "cross-env NODE_ENV=production webpack",
     "build:dev": "cross-env NODE_ENV=dev webpack",
-    "serve": "cross-env NODE_ENV=prod webpack serve",
+    "serve": "cross-env NODE_ENV=production webpack serve",
     "lint": "eslint src",
     "lint:fix": "npm run lint -- --fix",
     "lint:gl": "npm run lint -- --format gitlab",

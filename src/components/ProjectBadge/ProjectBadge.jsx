@@ -9,10 +9,12 @@ const projectBadges = {
   js: "JavaScript",
   react: "React",
   web: "Web Design",
+  sass: "SASS",
   cad: "CAD",
   ml: "Machine Learning",
   linux: "Linux",
-  virtualization: "Virtualization"
+  virtualization: "Virtualization",
+  active: "Active"
 };
 
 function ProjectBadge({ id }) {

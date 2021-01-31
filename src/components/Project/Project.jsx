@@ -14,7 +14,7 @@ ProjectLink.propTypes = {
   url: PropTypes.string.isRequired
 };
 
-const Project = ({ name, startDate, endDate, badges, wakatimestub, links, desc }) => {
+const Project = ({ name, startDate, endDate, badges, wakatimestub, links, description }) => {
 
   let badgeObjs = badges.map((id,k) => <ProjectBadge key={k} id={id} />);
 
@@ -36,7 +36,7 @@ const Project = ({ name, startDate, endDate, badges, wakatimestub, links, desc }
       <Col md={6}>
         <span className="period">{period}</span>
       </Col>
-      <p style={{"width": "100%"}} className="ml-3">{desc}</p>
+      <p style={{"width": "100%"}} className="ml-3">{description}</p>
       {linkBtns }
     </Row>
   );
@@ -48,7 +48,7 @@ Project.propTypes = {
   endDate: PropTypes.string,
   badges: PropTypes.array.isRequired,
   links: PropTypes.array.isRequired,
-  desc: PropTypes.string.isRequired
+  description: PropTypes.string.isRequired
 };
 
 export default Project;

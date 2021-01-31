@@ -1,4 +1,5 @@
 /* eslint-disable no-var */
+const webpack = require("webpack");
 const { merge } = require("webpack-merge");
 const glob = require("glob");
 

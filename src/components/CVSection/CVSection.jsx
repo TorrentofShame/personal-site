@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import PropTypes from "prop-types";
 import Container from "react-bootstrap/Container";
 import { capitalize } from "_utils";
@@ -14,7 +14,9 @@ const CVSection = ({ name, children }) => {
           {capitalize(name)}
         </h2>
       </div>
-      {children }
+      <Suspense fallback={<div style={{marginBottom: "50px"}}>Loading...</div>}>
+        {children }
+      </Suspense>
     </Container>
   );
 };
