@@ -9,6 +9,7 @@ const WorkboxPlugin = require("workbox-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const PurgeCssPlugin = require("purgecss-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
+const CompressionPlugin = require("compression-webpack-plugin");
 
 const helpers = require("./helpers");
 const common = require("./webpack.common");
@@ -38,6 +39,10 @@ module.exports = merge(common, {
     }),
     new PurgeCssPlugin({
       paths: glob.sync(`${helpers.root("src")}/**/*`, { nodir: true })
+    }),
+    new CompressionPlugin({
+      test: /\.js(\?.*)?$/,
+      algorithm: "gzip"
     })
   ],
   optimization: {
