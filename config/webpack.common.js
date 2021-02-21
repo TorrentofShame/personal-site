@@ -10,8 +10,8 @@ const WebpackPwaManifest = require("webpack-pwa-manifest");
 const helpers = require("./helpers");
 const manifest = require("./manifest");
 
-const packageJson = require("../package.json");
-const vendorDependencies = Object.keys(packageJson["dependencies"]);
+//const packageJson = require("../package.json");
+//const vendorDependencies = Object.keys(packageJson["dependencies"]);
 
 const NODE_ENV = process.env.NODE_ENV;
 
@@ -31,8 +31,8 @@ const babelLoader = {
 
 module.exports = {
   entry: {
-    main: helpers.root("src/index.jsx"),
-    vendor: vendorDependencies
+    main: helpers.root("src/index.jsx")
+    //vendor: vendorDependencies
   },
   module: {
     rules: [
