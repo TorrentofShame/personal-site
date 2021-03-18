@@ -25,10 +25,10 @@ const MetaHead = () => {
       <meta name="subject" content={def.subject} />
       <meta name="author" content={def.author} />
       <meta name="description" content={def.description} />
-      <meta name="og:site_name" content="Simon Weizman Portfolio" />
-      <meta name="og:title" content={def.title} />
-      <meta name="og:image" content={FaviconPNG} />
-      <meta name="og:description" content={def.description} />
+      <meta property="og:site_name" content="Simon Weizman Portfolio" />
+      <meta property="og:title" content={def.title} />
+      <meta property="og:image" content={FaviconPNG} />
+      <meta property="og:description" content={def.description} />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content="@torrentofshame" />
       <meta name="twitter:creator" content="@torrentofshame" />
