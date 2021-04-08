@@ -17,6 +17,10 @@ stages:
 
 lint:
   stage: lint
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+    - if: '$CI_COMMIT_BRANCH && $CI_OPEN_MERGE_REQUESTS'
+      when: never
   script:
     - npm run lint:gl
   artifacts:
@@ -26,6 +30,10 @@ lint:
 
 test:
   stage: test
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+    - if: '$CI_COMMIT_BRANCH && $CI_OPEN_MERGE_REQUESTS'
+      when: never
   script:
     - npm run test:gl
   artifacts:
@@ -37,6 +45,8 @@ test:
 
 pages:
   stage: deploy
+  rules:
+    - if: '$CI_COMMIT_TAG'
   script:
     - npm run build
     - mv public _public
@@ -45,8 +55,6 @@ pages:
   artifacts:
     paths:
       - public
-  only:
-    - master
   needs:
     - lint
     - test
