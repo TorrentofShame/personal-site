@@ -19,7 +19,7 @@ function HomePage({ isWarm }) {
   let projects = Resume.projects.map((d,k) => <Project key={k} {...d} />);
 
   return (
-    <main>
+    <main id="main">
       <Header isWarm={isWarm} />
       <CV>
         <CVSection name="experience">

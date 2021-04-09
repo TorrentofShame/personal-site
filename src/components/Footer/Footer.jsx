@@ -7,7 +7,7 @@ import Row from "react-bootstrap/Row";
 function Footer() {
   
   return (
-    <footer className="page-footer gradient">
+    <footer id="footer" className="page-footer gradient">
       <Container fluid={true}>
         <Row className="item justify-content-center">
         </Row>

@@ -1,0 +1,19 @@
+$navbar-skiplink-bgcolor: #FFF;
+$navbar-skiplink-fgcolor: #212529;
+
+.skip-link {
+  background: $navbar-skiplink-bgcolor;
+  color: $navbar-skiplink-fgcolor;
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 4px;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  border-radius: 10px;
+
+  &:focus-within {
+    transform: translateY(0%);
+  }
+}
