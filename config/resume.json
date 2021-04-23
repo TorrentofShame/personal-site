@@ -83,7 +83,7 @@
   ],
   "projects": [
     {
-      "name": "Verum Interavtive Starmap",
+      "name": "Verum Interactive Starmap",
       "startDate": "Dec 2020",
       "endDate": "Jan 2021",
       "badges": ["web", "js", "react", "sass"],
