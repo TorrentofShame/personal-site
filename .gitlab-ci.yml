@@ -83,6 +83,6 @@ build-resume:
     - texliveonfly --compiler=latexmk --arguments='-pdflua -interaction=nonstopmode' simonweizman.tex
   artifacts:
     paths:
-      - ./*.pdf
+      - ./resume/*.pdf
   needs:
     - lint-resume
