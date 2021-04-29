@@ -71,14 +71,14 @@ lint-resume:
   stage: lint-resume
   image: torrentofshame/lualatex-texliveonfly
   script:
-    - chktex simonweizman.tex
+    - chktex resume/simonweizman.tex
   needs: []
 
 build-resume:
   stage: build-resume
   image: torrentofshame/lualatex-texliveonfly
   script:
-    - texliveonfly --compiler=latexmk --arguments='-pdflua -interaction=nonstopmode' simonweizman.tex
+    - texliveonfly --compiler=latexmk --arguments='-pdflua -interaction=nonstopmode' resume/simonweizman.tex
   artifacts:
     paths:
       - ./*.pdf
