@@ -4,19 +4,23 @@ variables:
   PUBLIC_URL: /
 
 cache:
+  untracked: true
   paths:
     - node_modules
+  key: "$CI_BUILD_NAME"
 
 before_script:
   - npm ci
 
 stages:
-  - lint
-  - test
-  - deploy
+  - lint-site
+  - test-site
+  - deploy-site
+  - lint-resume
+  - build-resume
 
-lint:
-  stage: lint
+lint-site:
+  stage: lint-site
   rules:
     - if: '$CI_COMMIT_TAG'
       when: always
@@ -30,8 +34,8 @@ lint:
       codequality: gl-codequality.json
   needs: []
 
-test:
-  stage: test
+test-site:
+  stage: test-site
   rules:
     - if: '$CI_COMMIT_TAG'
       when: always
@@ -48,7 +52,7 @@ test:
   needs: []
 
 pages:
-  stage: deploy
+  stage: deploy-site
   rules:
     - if: '$CI_COMMIT_TAG'
   script:
@@ -60,5 +64,23 @@ pages:
     paths:
       - public
   needs:
-    - lint
-    - test
+    - lint-site
+    - test-site
+
+lint-resume:
+  stage: lint-resume
+  image: torrentofshame/lualatex-texliveonfly
+  script:
+    - chktex simonweizman.tex
+  needs: []
+
+build:
+  stage: build
+  image: torrentofshame/lualatex-texliveonfly
+  script:
+    - texliveonfly --compiler=latexmk --arguments='-pdflua -interaction=nonstopmode' simonweizman.tex
+  artifacts:
+    paths:
+      - ./*.pdf
+  needs:
+    - lint-resume
