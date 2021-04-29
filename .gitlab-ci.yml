@@ -74,8 +74,8 @@ lint-resume:
     - chktex simonweizman.tex
   needs: []
 
-build:
-  stage: build
+build-resume:
+  stage: build-resume
   image: torrentofshame/lualatex-texliveonfly
   script:
     - texliveonfly --compiler=latexmk --arguments='-pdflua -interaction=nonstopmode' simonweizman.tex
