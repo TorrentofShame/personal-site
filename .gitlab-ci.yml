@@ -79,7 +79,8 @@ build-resume:
   stage: build-resume
   image: torrentofshame/lualatex-texliveonfly
   script:
-    - texliveonfly --compiler=latexmk --arguments='-pdflua -interaction=nonstopmode' resume/simonweizman.tex
+    - cd resume
+    - texliveonfly --compiler=latexmk --arguments='-pdflua -interaction=nonstopmode' simonweizman.tex
   artifacts:
     paths:
       - ./*.pdf
