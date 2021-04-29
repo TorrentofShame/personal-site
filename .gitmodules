@@ -1,4 +1,4 @@
 [submodule "resume"]
 	path = resume
-	url = git@gitlab.com:torrentofshame/resume.git
+	url = ../resume.git
 	branch = master

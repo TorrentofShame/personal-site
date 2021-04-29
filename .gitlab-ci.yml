@@ -2,6 +2,7 @@ image: node:alpine
 
 variables:
   PUBLIC_URL: /
+  GIT_SUBMODULE_STRATEGY: recursive
 
 cache:
   untracked: true
