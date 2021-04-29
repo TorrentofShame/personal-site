@@ -10,6 +10,7 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const PurgeCssPlugin = require("purgecss-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
+const HtmlWebpackPrerenderPlugin = require("html-webpack-prerender-plugin");
 
 const helpers = require("./helpers");
 const common = require("./webpack.common");
@@ -20,6 +21,7 @@ module.exports = merge(common, {
   output: {
     filename: "[name].[contenthash].bundle.js",
     publicPath: "/",
+    libraryTarget: "umd",
     path: helpers.root("dist")
   },
   plugins: [
@@ -43,7 +45,9 @@ module.exports = merge(common, {
     new CompressionPlugin({
       test: /\.js(\?.*)?$/,
       algorithm: "gzip"
-    })
+    }),
+    // TODO: don't forget to finish setting up in the other files!!
+    new HtmlWebpackPrerenderPlugin({ main: "#root" })
   ],
   optimization: {
     minimize: true,
