@@ -21,7 +21,7 @@ function Footer() {
           <a title="@torrent#0662" target="_blank" rel="noopener noreferrer" aria-label="Discord" href="https://discord.gg/MYvd3RB"><i aria-hidden="true" className="fab fa-discord" /></a>
         </Row>
         <Row className="item justify-content-center mt-3">
-          <p className="copyright">© 2020 - Simon Weizman</p>
+          <p className="copyright">© 2021 - Simon Weizman</p>
         </Row>
       </Container>
     </footer>
