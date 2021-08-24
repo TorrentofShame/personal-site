@@ -1,7 +1,7 @@
 {
   "profile": {
     "name": "Simon Weizman",
-    "headline": "Full-stack Web Developer and UCF Computer Science Student",
+    "headline": "Full-Stack Developer and UCF Computer Science Student",
     "email": "contact@simon.weizman.us",
     "location": "Florida, US",
     "links": [
@@ -45,12 +45,34 @@
   "summary": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
   "experiences": [
     {
+      "jobTitle": "Technical Support",
+      "organization": "Black Inc. (The Living World of Verum)",
+      "startDate": "Aug 2021",
+      "location": "Remote/Virtual",
+      "description": [
+        "Creating code, scripts, databases, and systems which provide technical automation of game systems used for Verum",
+        "Maintaining and troubleshooting problems with the technical automated systems used for Verum."
+      ]
+    },
+    {
       "jobTitle": "Software Engineering Intern",
       "organization": "SavvySuit",
       "startDate": "Mar 2021",
       "location": "Orlando, FL",
       "description": [
-        "Working in a team of 5 people (1 other intern) to create and develop software."
+        "Working in a team of 5 people (1 other intern) to create and develop software.",
+        "Utilizing AWS Amplify and DataStore to create an offline-first app to assist people with poor internet connection in completing SSI/SSDI applications."
+      ]
+    },
+    {
+      "jobTitle": "DevOps Lead",
+      "organization": "Knight Hacks",
+      "startDate": "Aug 2021",
+      "location": "Remote/Virtual",
+      "description": [
+        "Setup and assisted the setup of CI/CD pipelines to automatically deploy application code.",
+        "Collaborated with team leaders to setup Sentry to handle application observability.",
+        "Using Kubernetes to orchestrate the deployment, scaling, and management of Docker Containers."
       ]
     },
     {
@@ -64,7 +86,17 @@
         "Collaborate with front end and mobile teams to ensure the quality of the final product.",
         "Design and maintained unit tests in collaboration with team members to ensure that the code functions properly.",
         "Architected the initial boilerplate code.",
-        "Assisted in deployment using GitHub Actions, Kubernetes, and Nginx."
+        "Assisted in deployment using GitHub Actions, Kubernetes, and Nginx.",
+        "Building RESTful APIs that serve data to our React and React-Native front-ends based on data stored by the organization's officers."
+      ]
+    },
+    {
+      "jobTitle": "Freelance Developer",
+      "organization": "Upwork",
+      "startDate": "Mar 2021",
+      "location": "Remote/Virtual",
+      "description": [
+        "Built and developed custom software programs according to client specifications."
       ]
     },
     {
