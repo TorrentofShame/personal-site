@@ -50,25 +50,53 @@
       "startDate": "Mar 2021",
       "location": "Orlando, FL",
       "description": [
-        "Working in a team of 5 people (1 other intern) to create and develop software."
+          "Work on an offline-first, ADA compliant progressive web app that assists disabilities living in locatinos with poor internet",
+          "Build a form structure in a yaml config file, create dynamic forms using Formik and JavaScript, which take in applicants' input and generate new fields accordingly if needed, and ensure the reusability of code when the structure of form changes",
+          "Manipulate local data, enable offline and cloud synchronization using Amplify DataStore in the frontend",
+          "Implement data conflict resolution, versioning and journaling using AWS AppSync with DynamoDB in the backend"
+      ]
+    },
+    {
+      "jobTitle": "Freelance Developer",
+      "organization": "Upwork",
+      "startDate": "Mar 2021",
+      "location": "Remote/Virtual",
+      "description": [
+        "Working closely with clients to create custom scripts and modify pre-existing code."
+      ]
+    },
+    {
+      "jobTitle": "DevOps Lead",
+      "organization": "Knight Hacks",
+      "startDate": "Feb 2021",
+      "endDate": "Nov 2021",
+      "location": "Remote/Virtual",
+      "description": [
+        "Deployed and managed our applications running on a combination of Kubernetes, Azure, and Cloudflare.",
+        "Built, maintained, and scaled infrastructure for production and staging environments.",
+        "Used GitHub Actions to automate testing and deployment to production and staging environments.",
+        "Oversaw the implementation of automated performance measurement reporting and error monitoring.",
+        "Developed automated pipelines for creating and deploying new releases using semver and GitHub Actions."
       ]
     },
     {
       "jobTitle": "Back End Developer",
       "organization": "Knight Hacks",
       "startDate": "Feb 2021",
+      "endDate": "Nov 2021",
       "location": "Remote/Virtual",
       "description": [
-        "Working in a team of 5 people using Flask and MongoDB to create tools for student hackathons.",
-        "Using Agile Methodology in the team.",
-        "Collaborate with front end and mobile teams to ensure the quality of the final product.",
-        "Design and maintained unit tests in collaboration with team members to ensure that the code functions properly.",
+        "Worked in a team of 6 people using Flask and MongoDB to create tools for student hackathons.",
+        "Used Agile Methodology in the team.",
+        "Collaborated with front end and mobile teams to ensure the quality of the final product.",
+        "Designed and maintained unit tests in collaboration with team members to ensure code quality.",
         "Architected the initial boilerplate code.",
-        "Assisted in deployment using GitHub Actions, Kubernetes, and Nginx."
+        "Assisted in deployment using GitHub Actions, Kubernetes, and Nginx.",
+        "Built and deployed various hotfixes and last-minute changes to the backend."
       ]
     },
     {
-      "jobTitle": "Volunteer Lua Developer",
+      "jobTitle": "Lua Developer",
       "organization": "Innovative Gamers",
       "startDate": "Mar 2019",
       "endDate": "Feb 2020",
@@ -78,7 +106,7 @@
         "Designed custom UI that integrated existing features to assist players and staff in managing characters and the server.",
         "Cooperated with staff and players to increase player retention during down-time by 50%.",
         "Documented the steps necessary to configure the different features on the server.",
-        "Maintained and managed the serverÎé}s code and database."
+        "Maintained and managed the server's code and database."
       ]
     },
     {
@@ -96,22 +124,37 @@
   ],
   "projects": [
     {
-      "name": "Verum Interactive Starmap",
-      "startDate": "Dec 2020",
-      "endDate": "Jan 2021",
-      "badges": ["web", "js", "react", "sass"],
-      "wakatime": "verum-interactive-starmap",
+      "name": "LuaLaTeX Resume",
+      "startDate": "Nov 2020",
+      "wakatime": "resume",
       "links": [
         {
-          "name": "View",
-          "url": "https://verumstarmap.torrentofshame.com"
+          "name": "Download",
+          "url": "https://gitlab.com/api/v4/projects/torrentofshame%2Fresume/jobs/artifacts/master/raw/simonweizman.pdf?job=build"
         },
         {
           "name": "GitLab",
-          "url": "https://gitlab.com/torrentofshame/verum-interactive-starmap"
+          "url": "https://gitlab.com/torrentofshame/resume"
         }
       ],
-      "description": "An interactive starmap for Arcadum's world of Verum. Art is by Yowto with permission."
+      "description": "My resume that I made in LuaLaTeX, that is generated from information saved in a config file."
+    },
+    {
+      "name": "Personal Portfolio Website",
+      "startDate": "Nov 2018",
+      "badges": ["js", "react", "web"],
+      "wakatime": "personal-site",
+      "links": [
+        {
+          "name": "View",
+          "url": "https://simon.weizman.dev"
+        },
+        {
+          "name": "GitLab",
+          "url": "https://gitlab.com/torrentofshame/personal-site"
+        }
+      ],
+      "description": "My personal website has been created by me; however, it is not-responsive and it is sorely out of date so I am currently deciding between 4 designs for the website, 3 of them based on Bootstrap 4."
     },
     {
       "name": "Web Email Client",
@@ -124,23 +167,6 @@
         }
       ],
       "description": "Basically a Gmail/Outlook Clone architected with NodeJS and Express, etc. to help me learn more about Full-Stack Development and best practices for production."
-    },
-    {
-      "name": "Personal Portfolio Website",
-      "startDate": "Nov 2018",
-      "badges": ["js", "react", "web"],
-      "wakatime": "personal-site",
-      "links": [
-        {
-          "name": "View",
-          "url": "https://simon.weizman.us"
-        },
-        {
-          "name": "GitLab",
-          "url": "https://gitlab.com/torrentofshame/personal-site"
-        }
-      ],
-      "description": "My personal website has been created by me; however, it is not-responsive and it is sorely out of date so I am currently deciding between 4 designs for the website, 3 of them based on Bootstrap 4."
     },
     {
       "name": "Why don't people format their numbers browser extension",
@@ -199,7 +225,7 @@
       "degree": "Computer Science BS",
       "institution": "University of Central Florida",
       "startDate": "Jul 2020",
-      "endDate": "May 2024",
+      "endDate": "Dec 2023",
       "description": "Currently enrolled as a Computer Science major."
     },
     {
