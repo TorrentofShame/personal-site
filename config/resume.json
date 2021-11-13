@@ -50,8 +50,8 @@
       "startDate": "Mar 2021",
       "location": "Orlando, FL",
       "description": [
-          "Work on an offline-first, ADA compliant progressive web app that assists disabilities living in locatinos with poor internet",
-          "Build a form structure in a yaml config file, create dynamic forms using Formik and JavaScript, which take in applicants' input and generate new fields accordingly if needed, and ensure the reusability of code when the structure of form changes",
+          "Work on an offline-first, ADA compliant progressive web app that assists disabilities living in locations with poor internet.",
+          "Architected a dynamic form configuration system using yaml, Formik, and React that allows for the easy configuration of forms that validate user input and automatically add more fields depending on user input.",
           "Manipulate local data, enable offline and cloud synchronization using Amplify DataStore in the frontend",
           "Implement data conflict resolution, versioning and journaling using AWS AppSync with DynamoDB in the backend"
       ]
