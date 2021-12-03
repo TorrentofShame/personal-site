@@ -127,6 +127,7 @@
       "name": "LuaLaTeX Resume",
       "startDate": "Nov 2020",
       "wakatime": "resume",
+      "badges": ["lua", "latex"],
       "links": [
         {
           "name": "Download",
