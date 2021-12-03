@@ -35,6 +35,9 @@ img {
       }
     }
     .compsrchref {
+      @media (max-width: 768px) {
+        display: none; // TODO: actually handle these additional badges instead of hiding them, I would but I'm tired and that's future me's problem. Get rekt Simon
+      }
       color: lightgray!important;
       &:hover {
         color: $tertiary!important;
