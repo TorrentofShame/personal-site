@@ -51,7 +51,7 @@ Project.propTypes = {
   description: PropTypes.string.isRequired
 };
 Project.defaultProps = {
-  badges = []
+  badges: []
 };
 
 export default Project;
