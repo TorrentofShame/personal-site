@@ -326,3 +326,10 @@ a:hover {color: initial; text-decoration: none;}
   font-size: 15px;
   margin-bottom: 0;
 }
+
+.compsrchref {
+  color: lightgray !important;
+  &:hover {
+    color: $tertiary !important;
+  }
+}
