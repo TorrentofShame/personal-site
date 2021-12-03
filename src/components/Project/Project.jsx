@@ -50,5 +50,8 @@ Project.propTypes = {
   links: PropTypes.array.isRequired,
   description: PropTypes.string.isRequired
 };
+Project.defaultProps = {
+  badges = []
+};
 
 export default Project;
