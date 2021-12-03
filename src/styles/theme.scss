@@ -29,13 +29,15 @@ img {
   &.page-footer {
     border-top: none;
     a {
-      color: $body-bg!important;
-      opacity: 1!important;
-      .compsrchref {
-        color: lightgray!important;
-        &:hover {
-          color: $tertiary!important;
-        }
+      &:not(.compsrchref) {
+        color: $body-bg!important;
+        opacity: 1!important;
+      }
+    }
+    .compsrchref {
+      color: lightgray!important;
+      &:hover {
+        color: $tertiary!important;
       }
     }
   }
