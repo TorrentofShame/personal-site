@@ -21,7 +21,8 @@ function Footer() {
           <a title="@torrent#0662" target="_blank" rel="noopener noreferrer" aria-label="Discord" href="https://discord.gg/MYvd3RB"><i aria-hidden="true" className="fab fa-discord" /></a>
         </Row>
         <Row className="item justify-content-center mt-3">
-          <p className="copyright">© 2021 - Simon Weizman</p>
+          <a href="https://fsf.org" style={{position: "absolute", left: "1rem"}} target="_blank" rel="noopener noreferrer" title="Proud Member of FSF since Dec 21"><img src="https://static.fsf.org/nosvn/associate/crm/5739948.png" alt="FSF Member Since December 2021" /></a>
+          <p className="copyright">© 2021 - Simon Weizman - <a className="compsrchref" href="https://gitlab.com/torrentofshame/personal-site">Complete source code</a></p>
         </Row>
       </Container>
     </footer>

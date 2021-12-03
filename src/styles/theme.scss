@@ -29,8 +29,21 @@ img {
   &.page-footer {
     border-top: none;
     a {
-      color: $body-bg!important;
-      opacity: 1!important;
+      &:not(.compsrchref) {
+        color: $body-bg!important;
+        opacity: 1!important;
+      }
+    }
+    @media (max-width: 768px) {
+      .compsrchref {
+        display: none; // TODO: actually handle these additional badges instead of hiding them, I would but I'm tired and that's future me's problem. Get rekt Simon
+      }
+    }
+    .compsrchref {
+      color: lightgray!important;
+      &:hover {
+        color: $tertiary!important;
+      }
     }
   }
 }

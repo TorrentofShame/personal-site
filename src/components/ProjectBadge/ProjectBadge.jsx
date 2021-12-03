@@ -14,7 +14,8 @@ const projectBadges = {
   ml: "Machine Learning",
   linux: "Linux",
   virtualization: "Virtualization",
-  active: "Active"
+  active: "Active",
+  latex: "LaTeX"
 };
 
 function ProjectBadge({ id }) {
