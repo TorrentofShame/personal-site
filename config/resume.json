@@ -62,7 +62,8 @@
       "startDate": "Mar 2021",
       "location": "Remote/Virtual",
       "description": [
-        "Working closely with clients to create custom scripts and modify pre-existing code."
+        "Working closely with clients to create custom scripts and modify pre-existing code.",
+        "Reconstructed websites using incomplete web archive snapshots."
       ]
     },
     {
@@ -238,6 +239,14 @@
     }
   ],
   "certifications": [
+    {
+      "url": "https://www.certmetrics.com/comptia/public/verification.aspx?code=EHL8QVMVFVK0VJSH",
+      "logo": "comptia-security-ce-certification",
+      "name": "CompTIA Security+ ce",
+      "issuer": "CompTIA",
+      "issueDate": "Dec 2021",
+      "expireDate": "Dec 2024"
+    },
     {
       "url": "https://www.youracclaim.com/badges/81aef082-ffbf-4086-9854-079e7d86012c",
       "logo": "autodesk-inventor-certified-user",
