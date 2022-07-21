@@ -45,6 +45,15 @@
   "summary": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
   "experiences": [
     {
+      "jobTitle": "Systems Engineer",
+      "organization": "GLESEC Group",
+      "startDate": "Aug 2022",
+      "location": "Orlando, FL",
+      "description": [
+        
+      ]
+    },
+    {
       "jobTitle": "Software Engineering Intern",
       "organization": "SavvySuit",
       "startDate": "Mar 2021",
@@ -60,6 +69,7 @@
       "jobTitle": "Freelance Developer",
       "organization": "Upwork",
       "startDate": "Mar 2021",
+      "endDate": "May 2022",
       "location": "Remote/Virtual",
       "description": [
         "Working closely with clients to create custom scripts and modify pre-existing code.",
