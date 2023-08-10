@@ -9,8 +9,14 @@ import "./Certification.scss";
 const certImgSize = 50;
 
 const Certification = ({ name, url, issuer, issueDate, expireDate, logo }) => {
+  const now = new Date(Date.now());
+  let expireMonth = expireDate ? new Date(Date.parse(expireDate)) : null;
+  let endofExpireMonth = expireMonth ? new Date(expireMonth.getFullYear(), expireMonth.getMonth() + 1, 0) : null;
+  let expireString = endofExpireMonth && endofExpireMonth.getTime() <= now.getTime()
+      ? `Expired ${expireDate}`
+      : `Expires ${expireDate}`;
   
-  let period = `Issued ${issueDate} — ` + (expireDate ? `Expires ${expireDate}` : "No Expiration Date");
+  let period = `Issued ${issueDate} — ` + (expireDate ? expireString : "No Expiration Date");
 
   return (
     <Row className="item">
