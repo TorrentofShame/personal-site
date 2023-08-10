@@ -13,8 +13,8 @@ const Certification = ({ name, url, issuer, issueDate, expireDate, logo }) => {
   let expireMonth = expireDate ? new Date(Date.parse(expireDate)) : null;
   let endofExpireMonth = expireMonth ? new Date(expireMonth.getFullYear(), expireMonth.getMonth() + 1, 0) : null;
   let expireString = endofExpireMonth && endofExpireMonth.getTime() <= now.getTime()
-      ? `Expired ${expireDate}`
-      : `Expires ${expireDate}`;
+    ? `Expired ${expireDate}`
+    : `Expires ${expireDate}`;
   
   let period = `Issued ${issueDate} — ` + (expireDate ? expireString : "No Expiration Date");
 
