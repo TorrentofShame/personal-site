@@ -29,9 +29,9 @@ function HomePage({ isWarm }) {
           <Education
             degree="Computer Science"
             institution="University of Central Florida"
-            startDate="Jun 2020"
-            endDate="May 2024"
-            desc="Currently enrolled as a Computer Science major."
+            startDate="Jan 2020"
+            endDate="Aug 2023"
+            desc=""
           />
         </CVSection>
         <CVSection name="certifications">

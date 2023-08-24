@@ -28,7 +28,7 @@ function Header({ isWarm }) {
         </Row>
         <h3 className="text-center">Simon Weizman</h3>
         <Row className="about-me">
-          <p className="text-center">Computer Science Student at University of Central Florida</p>
+          <p className="text-center">Systems Engineer at GLESEC</p>
         </Row>
       </Container>
     </header>

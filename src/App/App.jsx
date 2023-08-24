@@ -37,7 +37,7 @@ export class App extends React.Component {
       ],
       home: {
         title: "Simon Weizman",
-        description: "Computer Science Student at University of Central Florida | Expected to Graduate May 2024 | FIRST Alumni | Completed Google Foobar"
+        description: "Systems Engineer at GLESEC"
       },
       about: {
         title: "About Me"
