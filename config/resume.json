@@ -34,11 +34,6 @@
         "name": "GitHub",
         "url": "github.com/torrentofshame",
         "faIcon": "fab fa-github"
-      },
-      {
-        "name": "Discord",
-        "url": "https://discord.gg/MYvd3RB",
-        "faIcon": "fab fa-discord"
       }
     ]
   },
@@ -49,7 +44,13 @@
       "organization": "GLESEC Group",
       "startDate": "Aug 2022",
       "location": "Orlando, FL",
-      "description": []
+      "description": [
+        "Managing AWS infrastructure such as EC2, ECR, and VPCs.",
+        "Utilizing IaC and automation tools such as Ansible, Terraform, Puppet Enterprise, Powershell to automate the configuration of servers, networks, and AD users.",
+        "Creating and Optimizing Splunk dashboards for SOC and clients to utilize when monitoring security services.",
+        "Creating custom integrations to streamline the collection of customer logs.",
+        "Managing Palo Alto Firewalls with Panorama"
+      ]
     },
     {
       "jobTitle": "Software Engineering Intern",
@@ -133,6 +134,13 @@
     }
   ],
   "projects": [
+    {
+      "name": "BEARMAX",
+      "startDate": "Aug 2022",
+      "endDate": "May 2023",
+      "badges": ["linux", "python", "c++", "ros2", "rtos"],
+      "description": " Robot for Social Emotional Learning Facilitation for Children with Autism."
+    },
     {
       "name": "LuaLaTeX Resume",
       "startDate": "Nov 2020",
@@ -236,8 +244,8 @@
       "degree": "Computer Science BS",
       "institution": "University of Central Florida",
       "startDate": "Jul 2020",
-      "endDate": "Dec 2023",
-      "description": "Currently enrolled as a Computer Science major."
+      "endDate": "Aug 2023",
+      "description": ""
     },
     {
       "degree": "High School Diploma",
