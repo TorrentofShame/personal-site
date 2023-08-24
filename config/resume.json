@@ -1,7 +1,7 @@
 {
   "profile": {
     "name": "Simon Weizman",
-    "headline": "Systems Engineer and Computer Science Student at UCF",
+    "headline": "Systems Engineer at GLESEC",
     "email": "contact@simon.weizman.us",
     "location": "Florida, US",
     "links": [
@@ -139,7 +139,13 @@
       "startDate": "Aug 2022",
       "endDate": "May 2023",
       "badges": ["linux", "python", "c++", "ros2", "rtos"],
-      "description": " Robot for Social Emotional Learning Facilitation for Children with Autism."
+      "description": "A Robot for Social Emotional Learning Facilitation for Children with Autism.",
+      "links": [
+        {
+          "name": "View",
+          "url": "https://www.cecs.ucf.edu/SeniorDesignShowcase/team/bearmax-a-robot-for-social-emotional-learning-facilitation-for-children-with-autism/"
+        }
+      ]
     },
     {
       "name": "LuaLaTeX Resume",
