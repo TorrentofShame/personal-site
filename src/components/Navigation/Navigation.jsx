@@ -32,6 +32,11 @@ const Navigation = () => {
             to="/#projects"
           >Projects
           </HashLink>
+          <Link
+            className="nav-link"
+            to="//cdn.weizman.us/resume.pdf"
+          >Resume
+          </Link>
           {/*
           <Link
             className="nav-link"
