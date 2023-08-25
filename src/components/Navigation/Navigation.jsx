@@ -36,6 +36,7 @@ const Navigation = () => {
             className="nav-link"
             href="https://cdn.weizman.us/resume.pdf"
             target="_blank"
+            rel="noreferrer"
           >Resume
           </a>
           {/*
